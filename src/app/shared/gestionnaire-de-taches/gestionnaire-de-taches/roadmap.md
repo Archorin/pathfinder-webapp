@@ -10,8 +10,7 @@ Dans tous les cas le composant proposera:
 - [ ] un bouton de résolution de l'action suivante la plus urgente
 
 ### En mode étendu le composant propose en plus une liste des taches plannifiées, contenants chacune une ou plusieurs actions plus élémentaires.
-
-#### Une tâche contiendra donc:
+Une tâche contiendra donc:
 
 - [ ] une liste d'actions à résoudre pour accomplir cette tache
 - [ ] un code couleur définissant l'urgence de chaque action
