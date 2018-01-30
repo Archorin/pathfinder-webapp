@@ -1,0 +1,66 @@
+
+<!--
+    https://valor-software.com/ngx-bootstrap/#/collapse
+    https://bootstrapious.com/tutorial/sidebar/index4.html
+    https://bootstrapious.com/p/bootstrap-sidebar
+-->
+<table style="display:inline-block">
+<tbody>
+<tr>
+<td>
+  <nav id="sidebar" class="{{active}}">
+      <!-- Header de la liste des taches -->
+      <div class="sidebar-header">
+          <!-- Titre composant étendu -->
+          <h3 i18n>Liste</h3>
+          <!-- Titre composant compact -->
+          <strong>ToDo</strong>
+      </div>
+
+      <!-- Affichage de la liste des taches étendu -->
+      <ul dropdown class="list-unstyled components">
+          <!--li class="active">
+              <a data-toggle="collapse" aria-expanded="false">
+                  <i class="glyphicon glyphicon-home"></i>
+                  Home
+              </a>
+          </li-->
+          <li>
+              <a dropdownToggle data-toggle="collapse" aria-expanded="false">
+                  <i class="fa fa-id-badge"></i>
+                  Création de personnage
+              </a>
+              <ul *dropdownMenu class="collapse list-unstyled" id="pageSubmenu">
+                <li><shared-gestionnaire-de-taches-tache></shared-gestionnaire-de-taches-tache></li>
+                <li><shared-gestionnaire-de-taches-tache></shared-gestionnaire-de-taches-tache></li>
+                <li><shared-gestionnaire-de-taches-tache></shared-gestionnaire-de-taches-tache></li>
+              </ul>
+          </li>
+          <li>
+              <a>
+                  <i class="fa fa-plus-square-o"></i>
+                  Niveau 2
+              </a>
+          </li>
+          <li>
+              <a>
+                  <i class="fa fa-plus-square-o"></i>
+                  Niveau 3
+              </a>
+          </li>
+      </ul>
+  </nav>
+</td>
+<td>
+  <i class="{{rotate}} fa fa-chevron-left align-middle" (click)="toogleActive()" aria-hidden="true"></i>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<!--div id="content">
+    <button (click)='toogleActive()' type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+        Toggle Sidebar
+    </button>
+  </div-->

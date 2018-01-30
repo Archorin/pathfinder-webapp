@@ -1,0 +1,41 @@
+<h1>Liste des personnages</h1>
+<div class="btn-group">
+  <a class="btn btn-default" href="#">
+    <i class="fa fa-cog" 
+      aria-hidden="true" 
+      popoverTitle="Popover on top"
+      [popover]="menuTemplate"
+      placement="top"></i>
+  </a>
+  <a class="btn btn-default" href="#">
+    <i class="fa fa-align-center" title="Align Center"></i>
+  </a>
+  <a class="btn btn-default" href="#">
+    <i class="fa fa-align-right" title="Align Right"></i>
+  </a>
+  <a class="btn btn-default" href="#">
+    <i class="fa fa-align-justify" title="Align Justify"></i>
+  </a>
+</div>
+<a class="btn btn-default" href="path/to/settings" aria-label="Settings">
+  <i class="fa fa-cog" aria-hidden="true"></i>
+</a>
+<table class="table table-responsive table-striped table-sm table-hover">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Nom</th>
+        <th>Édition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let personnage of liste">
+        <th scope="row">{{personnage.id}}</th>
+        <td>{{personnage.nom}}</td>
+        <td><a routerLink="/personnage/{{personnage.id}}">
+          <i class="fa fa-pencil-square-o"></i>
+        </a></td>
+      </tr>
+    </tbody>
+  </table>
+  <ng-template #menuTemplate>Vivamus sagittis lacus vel augue laoreet rutrum faucibus: <div [innerHtml]="html"></div></ng-template>
