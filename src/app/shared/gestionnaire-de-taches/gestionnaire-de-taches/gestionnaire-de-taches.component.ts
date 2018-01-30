@@ -8,8 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class GestionnaireDeTachesComponent implements OnInit {
   active: string = null;
   rotate: string = null;
-  extended: boolean = true;
-  compact: boolean = false;
+  collapsed: boolean = false;
 
   constructor() { }
 
