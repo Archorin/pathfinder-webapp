@@ -11,6 +11,8 @@ import { GestionnaireDeTachesComponent } from './gestionnaire-de-taches/gestionn
 import { ActionComponent } from './gestionnaire-de-taches/action/action.component';
 import { EtapeComponent } from './gestionnaire-de-taches/etape/etape.component';
 import { TacheComponent } from './gestionnaire-de-taches/tache/tache.component';
+// tslint:disable-next-line:max-line-length
+import { GestionnaireDeTachesLightComponent } from './gestionnaire-de-taches-light/gestionnaire-de-taches-light/gestionnaire-de-taches-light.component';
 
 @NgModule({
   imports: [
@@ -19,7 +21,7 @@ import { TacheComponent } from './gestionnaire-de-taches/tache/tache.component';
     CollapseModule.forRoot(),
     BsDropdownModule.forRoot()
   ],
-  declarations: [GestionnaireDeTachesComponent, ActionComponent, EtapeComponent, TacheComponent],
-  exports: [GestionnaireDeTachesComponent, TacheComponent]
+  declarations: [GestionnaireDeTachesComponent, ActionComponent, EtapeComponent, TacheComponent, GestionnaireDeTachesLightComponent],
+  exports: [GestionnaireDeTachesLightComponent, TacheComponent]
 })
 export class SharedModule { }
