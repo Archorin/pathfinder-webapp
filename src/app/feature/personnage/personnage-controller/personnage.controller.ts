@@ -23,7 +23,8 @@ export class PersonnageController implements OnInit {
       .subscribe(
         personnages => {
           this.personnages = personnages;
-      });
+        }
+      );
   }
 
   getPrototype(id) {

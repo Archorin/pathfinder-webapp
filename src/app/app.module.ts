@@ -3,7 +3,10 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './feature/app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { CoreModule } from 'app/core/core.module';
+import { SharedModule } from 'app/shared/shared.module';
+import { AuthInterceptor } from 'app/core/authentification/auth-interceptor';
 
 @NgModule({
   declarations: [
@@ -11,10 +14,18 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     HttpClientModule,
+    AppRoutingModule,
+    CoreModule.forRoot(),
+    SharedModule
   ],
-  providers: [],
+  providers: [,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthInterceptor,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
