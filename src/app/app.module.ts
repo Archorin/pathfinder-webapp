@@ -17,7 +17,7 @@ import { AuthInterceptor } from 'app/core/authentification/auth-interceptor';
     AppRoutingModule,
     CoreModule.forRoot()
   ],
-  providers: [,
+  providers: [
     {
       provide: HTTP_INTERCEPTORS,
       useClass: AuthInterceptor,
@@ -26,4 +26,5 @@ import { AuthInterceptor } from 'app/core/authentification/auth-interceptor';
   ],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

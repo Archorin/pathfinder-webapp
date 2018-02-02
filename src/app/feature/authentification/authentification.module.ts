@@ -13,6 +13,6 @@ import { FormsModule } from '@angular/forms';
     FormsModule
   ],
   declarations: [LoginComponent],
-  exports: [LoginComponent]
+  exports: []
 })
 export class AuthentificationModule { }

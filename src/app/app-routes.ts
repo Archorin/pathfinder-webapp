@@ -11,8 +11,12 @@ export const routes: Routes = [
         loadChildren: 'app/feature/personnage/personnage.module#PersonnageModule'
     },
     {
-        path: '',
-        redirectTo: '/personnage',
-        pathMatch: 'full'
+        path: 'portail',
+        loadChildren: 'app/feature/portail/portail.module#PortailModule'
     },
+    {
+        path: '**',
+        redirectTo: 'login',
+        pathMatch: 'full'
+    }
 ];
