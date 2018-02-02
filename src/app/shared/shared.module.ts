@@ -12,18 +12,15 @@ import { GestionnaireDeTachesComponent } from './gestionnaire-de-taches/gestionn
 import { ActionComponent } from './gestionnaire-de-taches/action/action.component';
 import { EtapeComponent } from './gestionnaire-de-taches/etape/etape.component';
 import { TacheComponent } from './gestionnaire-de-taches/tache/tache.component';
-import { LoginComponent } from './login/login.component';
-
 
 @NgModule({
   imports: [
     CommonModule,
     TooltipModule.forRoot(),
     CollapseModule.forRoot(),
-    BsDropdownModule.forRoot(),
-    FormsModule
+    BsDropdownModule.forRoot()
   ],
-  declarations: [GestionnaireDeTachesComponent, ActionComponent, EtapeComponent, TacheComponent, LoginComponent],
-  exports: [GestionnaireDeTachesComponent, TacheComponent, LoginComponent]
+  declarations: [GestionnaireDeTachesComponent, ActionComponent, EtapeComponent, TacheComponent],
+  exports: [GestionnaireDeTachesComponent, TacheComponent]
 })
 export class SharedModule { }

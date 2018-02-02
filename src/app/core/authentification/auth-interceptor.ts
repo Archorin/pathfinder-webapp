@@ -39,7 +39,7 @@ export class AuthInterceptor implements HttpInterceptor {
                 // redirect to the login route
                 // or show a modal
                 console.log(this.router.url);
-                this.router.navigate(['personnage/login']);
+                this.router.navigate(['login']);
               }
             }
           });
