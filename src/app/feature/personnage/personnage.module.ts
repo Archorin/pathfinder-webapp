@@ -10,13 +10,11 @@ import { PersonnageEditionRoute } from './personnage-edition-route/personnage-ed
 import { PersonnageService } from './personnage.service';
 import { PersonnageListComponent } from './personnage-list/personnage-list.component';
 import { PersonnageEditeurComponent } from './personnage-editeur/personnage-editeur.component';
-import { CoreModule } from 'app/core/core.module';
 
 @NgModule({
   imports: [
     CommonModule,
     SharedModule,
-    CoreModule,
     PersonnageRoutingModule,
     PopoverModule.forRoot()
   ],

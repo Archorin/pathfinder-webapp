@@ -1,7 +1,7 @@
 /* Ng */
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { FormsModule } from '@angular/forms';
 /* Composants Bootstrap */
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
@@ -12,15 +12,18 @@ import { GestionnaireDeTachesComponent } from './gestionnaire-de-taches/gestionn
 import { ActionComponent } from './gestionnaire-de-taches/action/action.component';
 import { EtapeComponent } from './gestionnaire-de-taches/etape/etape.component';
 import { TacheComponent } from './gestionnaire-de-taches/tache/tache.component';
+import { LoginComponent } from './login/login.component';
+
 
 @NgModule({
   imports: [
     CommonModule,
     TooltipModule.forRoot(),
     CollapseModule.forRoot(),
-    BsDropdownModule.forRoot()
+    BsDropdownModule.forRoot(),
+    FormsModule
   ],
-  declarations: [GestionnaireDeTachesComponent, ActionComponent, EtapeComponent, TacheComponent],
-  exports: [GestionnaireDeTachesComponent, TacheComponent]
+  declarations: [GestionnaireDeTachesComponent, ActionComponent, EtapeComponent, TacheComponent, LoginComponent],
+  exports: [GestionnaireDeTachesComponent, TacheComponent, LoginComponent]
 })
 export class SharedModule { }

@@ -5,7 +5,6 @@ import { AppComponent } from './feature/app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { CoreModule } from 'app/core/core.module';
-import { SharedModule } from 'app/shared/shared.module';
 import { AuthInterceptor } from 'app/core/authentification/auth-interceptor';
 
 @NgModule({
@@ -16,8 +15,7 @@ import { AuthInterceptor } from 'app/core/authentification/auth-interceptor';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    CoreModule.forRoot(),
-    SharedModule
+    CoreModule.forRoot()
   ],
   providers: [,
     {
