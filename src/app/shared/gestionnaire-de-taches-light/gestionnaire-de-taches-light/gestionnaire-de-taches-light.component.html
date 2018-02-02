@@ -1,3 +1,52 @@
-<p>
-  gestionnaire-de-taches-light works!
-</p>
+<table class="feature-gestionnaire-de-taches {{active}}">
+  <tbody>
+      <tr>
+          <td>
+              <nav>
+                  <!-- Header de la liste des taches -->
+                  <header>
+                      <!-- Titre composant étendu -->
+                      <h3>Personnage ToDo-List</h3>
+                      <!-- Titre composant compact -->
+                      <strong>ToDo</strong>
+                  </header>
+                  <!-- Affichage de la liste des taches étendu -->
+                  <ul dropdown class="list-unstyled components" aria-expanded="false">
+                      <li>
+                          <a dropdownToggle data-toggle="collapse" aria-expanded="false">
+                              <i class="fa fa-id-badge"></i>
+                              <p>Création de personnage</p>
+                          </a>
+                          <ul *dropdownMenu class="collapse list-unstyled" id="pageSubmenu">
+                              <li>
+                                  <shared-gestionnaire-de-taches-tache></shared-gestionnaire-de-taches-tache>
+                              </li>
+                              <li>
+                                  <shared-gestionnaire-de-taches-tache></shared-gestionnaire-de-taches-tache>
+                              </li>
+                              <li>
+                                  <shared-gestionnaire-de-taches-tache></shared-gestionnaire-de-taches-tache>
+                              </li>
+                          </ul>
+                      </li>
+                      <li>
+                          <a>
+                              <i class="fa fa-plus-square-o"></i>
+                              <p>Niveau 2</p>
+                          </a>
+                      </li>
+                      <li>
+                          <a>
+                              <i class="fa fa-plus-square-o"></i>
+                             <p>Niveau 3</p>
+                          </a>
+                      </li>
+                  </ul>
+              </nav>
+          </td>
+          <td>
+              <i class="{{rotate}} fa fa-angle-double-left align-middle" (click)="toogleActive()" aria-hidden="true"></i>
+          </td>
+      </tr>
+  </tbody>
+</table>

@@ -22,6 +22,6 @@ import { GestionnaireDeTachesLightComponent } from './gestionnaire-de-taches-lig
     BsDropdownModule.forRoot()
   ],
   declarations: [GestionnaireDeTachesComponent, ActionComponent, EtapeComponent, TacheComponent, GestionnaireDeTachesLightComponent],
-  exports: [GestionnaireDeTachesLightComponent, TacheComponent]
+  exports: [GestionnaireDeTachesLightComponent, GestionnaireDeTachesComponent, TacheComponent]
 })
 export class SharedModule { }

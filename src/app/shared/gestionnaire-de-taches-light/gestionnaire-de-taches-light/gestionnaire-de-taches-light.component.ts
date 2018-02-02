@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./gestionnaire-de-taches-light.component.css']
 })
 export class GestionnaireDeTachesLightComponent implements OnInit {
-
+  active: string = null;
+  rotate: string = null;
+  collapsed: boolean = false;
   constructor() { }
 
   ngOnInit() {
   }
 
+  public toogleActive() {
+    this.active = this.active ? null : 'active';
+    this.rotate = this.rotate ? null : 'fa-rotate-180';
+  }
 }
