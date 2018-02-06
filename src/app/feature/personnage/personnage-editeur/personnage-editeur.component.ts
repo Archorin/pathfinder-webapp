@@ -4,7 +4,7 @@ import { Personnage } from '../personnage';
 @Component({
   selector: 'feature-personnage-editeur',
   templateUrl: './personnage-editeur.component.html',
-  styleUrls: ['./personnage-editeur.component.css']
+  styleUrls: ['./personnage-editeur.component.scss']
 })
 export class PersonnageEditeurComponent implements OnInit {
   @Input() prototype: Personnage;

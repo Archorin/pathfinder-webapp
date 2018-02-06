@@ -10,6 +10,8 @@ import { PersonnageEditionRoute } from './personnage-edition-route/personnage-ed
 import { PersonnageService } from './personnage.service';
 import { PersonnageListComponent } from './personnage-list/personnage-list.component';
 import { PersonnageEditeurComponent } from './personnage-editeur/personnage-editeur.component';
+import { FeuilleDePersonnageComponent } from './feuille-de-personnage/feuille-de-personnage.component';
+import { CiviliteComponent } from './feuille-de-personnage/civilite/civilite.component';
 
 @NgModule({
   imports: [
@@ -24,7 +26,9 @@ import { PersonnageEditeurComponent } from './personnage-editeur/personnage-edit
     PersonnageListeRoute,
     PersonnageEditionRoute,
     PersonnageListComponent,
-    PersonnageEditeurComponent
+    PersonnageEditeurComponent,
+    FeuilleDePersonnageComponent,
+    CiviliteComponent
   ],
 })
 export class PersonnageModule { }

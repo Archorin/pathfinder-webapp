@@ -1,0 +1,79 @@
+article {
+  width: auto;
+  display: inline-block;
+  min-width: 100%;
+  padding: 5px;
+  text-align: left;
+  .row { 
+    /*min-height: 1.8rem;*/
+    div {
+      float: left;
+      min-height: 1.2rem;
+      line-height: 1.2rem;
+    }
+    :first-child {
+      width:80%;
+      font-size: 0.7rem;
+      padding: 0 0 0 5% !important;
+    }
+    div:last-of-type {
+      transform-origin: 0% 100%;
+      transform: skewX(45deg);
+      z-index: -1;
+      width:15%;
+      min-height: none;
+    }
+  }
+  section {
+    padding: 2px;
+    font-size: 1rem; 
+    padding: 0 0 0 5% !important;
+    min-height: 1.7rem;
+    line-height: 1.7rem;
+  }
+}
+/* Surcharges de styles */
+/* Civilités du haut de la fiche */
+.civilite {
+  article {}
+  .row {
+    div {
+      background-color: #d4d7d8;
+      border: 2px solid #231F20;
+      border-bottom: none;
+    }
+    :first-child {
+      border-right: none;
+    }
+    div:last-of-type {
+      border-left: none;
+    }
+  }
+  section {
+    border: 2px solid #231F20;
+    border-top: none;
+  }
+}
+/* Block sombre / bord sombre */
+.caracteristique {
+  article {}
+  .row {
+    div {
+      background-color: #DCDDDE;
+      border: 2px solid #231F20;
+      border-bottom: none;
+    }
+    :first-child {
+      border-right: none;
+    }
+    div:last-of-type {
+      border-left: none;
+    }
+  }
+  section {
+    border: 2px solid #231F20;
+    border-top: none;
+    background-color: #DCDDDE;
+
+  }
+}
