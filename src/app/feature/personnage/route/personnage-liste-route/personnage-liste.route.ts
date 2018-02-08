@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { PersonnageController } from '../personnage-controller/personnage.controller';
+import { PersonnageController } from 'app/feature/personnage/controller/personnage.controller';
 
 @Component({
   templateUrl: './personnage-liste.route.html',

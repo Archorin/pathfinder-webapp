@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Personnage } from 'app/feature/personnage/personnage';
+import { Personnage } from 'app/feature/personnage/model/personnage';
 
 @Component({
   selector: 'feature-fiche',
