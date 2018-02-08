@@ -7,7 +7,7 @@ import { Personnage } from '../personnage';
   styleUrls: ['./personnage-editeur.component.scss']
 })
 export class PersonnageEditeurComponent implements OnInit {
-  @Input() prototype: Personnage;
+  @Input() personnage: Personnage;
 
   constructor() { }
 
