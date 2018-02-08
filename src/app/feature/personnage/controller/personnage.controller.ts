@@ -6,7 +6,8 @@ import { Observable } from 'rxjs/Observable';
 @Component({
   selector: 'feature-personnage-controller',
   templateUrl: './personnage.controller.html',
-  styleUrls: ['./personnage.controller.css']
+  styleUrls: ['./personnage.controller.css'],
+  providers: [ PersonnageService ],
 })
 export class PersonnageController implements OnInit {
 
