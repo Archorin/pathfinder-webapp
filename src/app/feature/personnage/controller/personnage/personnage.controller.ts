@@ -27,12 +27,4 @@ export class PersonnageController implements OnInit {
         }
       );
   }
-
-  getPrototype(id) {
-    this.personnageService.getPersonnage(id)
-      .subscribe(
-        personnage => {
-          this.personnage = personnage;
-      });
-  }
 }

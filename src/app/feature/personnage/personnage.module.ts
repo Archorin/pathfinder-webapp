@@ -6,17 +6,17 @@ import { PersonnageRoutingModule } from './personnage-routing.module';
 
 // Routes
 import { PersonnageListeRoute } from './route/personnage-liste-route/personnage-liste.route';
-import { PersonnageEditionRoute } from './route/personnage-edition-route/personnage-edition.route';
 
 // Controlleurs
-import { PersonnageController } from './controller/personnage.controller';
+import { PersonnageController } from './controller/personnage/personnage.controller';
 import { PersonnageListComponent } from './component/liste/personnage-list.component';
-import { PersonnageEditeurComponent } from './component/editeur/personnage-editeur.component';
+import { PersonnageEditeurController } from './controller/editeur/personnage-editeur.controller';
 
 // Components
-import { FicheComponent } from './fiche/fiche.component';
-import { CiviliteLectureComponent } from './fiche/civilite/civilite-lecture/civilite-lecture.component';
-import { CiviliteEditionComponent } from './fiche/civilite/civilite-edition/civilite-edition.component';
+import { FicheComponent } from './component/editeur/fiche/fiche.component';
+import { CiviliteLectureComponent } from './component/editeur/fiche/civilite/civilite-lecture/civilite-lecture.component';
+import { CiviliteEditionComponent } from './component/editeur/fiche/civilite/civilite-edition/civilite-edition.component';
+
 
 @NgModule({
   imports: [
@@ -25,11 +25,10 @@ import { CiviliteEditionComponent } from './fiche/civilite/civilite-edition/civi
     PersonnageRoutingModule
   ],
   declarations: [
-    PersonnageController,
     PersonnageListeRoute,
-    PersonnageEditionRoute,
+    PersonnageController,
+    PersonnageEditeurController,
     PersonnageListComponent,
-    PersonnageEditeurComponent,
     FicheComponent,
     CiviliteLectureComponent,
     CiviliteEditionComponent

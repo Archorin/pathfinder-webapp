@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, HostListener, ViewChild } from '@angular/core';
 import { Personnage } from 'app/feature/personnage/model/personnage';
 // tslint:disable-next-line:max-line-length
-import { CiviliteEditionComponent } from 'app/feature/personnage/fiche/civilite/civilite-edition/civilite-edition.component';
+import { CiviliteEditionComponent } from 'app/feature/personnage/component/editeur/fiche/civilite/civilite-edition/civilite-edition.component';
 
 @Component({
   selector: 'feature-personnage-feuille-civilite-lecture',
