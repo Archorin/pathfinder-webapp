@@ -3,10 +3,10 @@ import { Personnage } from 'app/feature/personnage/model/personnage';
 
 @Component({
   selector: 'feature-personnage-list',
-  templateUrl: './personnage-list.component.html',
-  styleUrls: ['./personnage-list.component.css']
+  templateUrl: './personnage-liste.component.html',
+  styleUrls: ['./personnage-liste.component.css']
 })
-export class PersonnageListComponent implements OnInit {
+export class PersonnageListeComponent implements OnInit {
   @Input() liste: Personnage[];
   html: string = 'Component';
   constructor() { }

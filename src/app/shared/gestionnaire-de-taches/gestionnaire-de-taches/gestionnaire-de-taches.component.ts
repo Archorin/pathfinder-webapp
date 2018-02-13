@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./gestionnaire-de-taches.component.css']
 })
 export class GestionnaireDeTachesComponent implements OnInit {
-  active: string = null;
-  rotate: string = null;
+  active: string = 'active';
+  rotate: string = 'fa-rotate-180';
   collapsed: boolean = false;
 
   constructor() { }

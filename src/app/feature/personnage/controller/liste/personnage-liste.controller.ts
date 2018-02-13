@@ -5,13 +5,14 @@ import { Observable } from 'rxjs/Observable';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'feature-personnage-editeur-controller',
-  templateUrl: './personnage-editeur.controller.html',
-  styleUrls: ['./personnage-editeur.controller.scss'],
+  selector: 'feature-personnage-liste-controller',
+  templateUrl: './personnage-liste.controller.html',
+  styleUrls: ['./personnage-liste.controller.scss'],
   providers: [ PersonnageService ],
 })
-export class PersonnageEditeurController implements OnInit {
-  @Input() personnage: Personnage = new Personnage();
+
+export class PersonnageListeController implements OnInit {
+  @Input() personnages: Personnage[] = new Array<Personnage>();
 
   constructor(
     private personnageService: PersonnageService,
@@ -19,15 +20,15 @@ export class PersonnageEditeurController implements OnInit {
   ) { }
 
   ngOnInit() {
-    const id = this.route.snapshot.paramMap.get('id');
-    this.getPrototype(id);
+    this.getAll();
+    console.log('ici');
   }
 
-  getPrototype(id) {
-    this.personnageService.getPersonnage(id)
+  getAll() {
+    this.personnageService.getPersonnages()
       .subscribe(
-        personnage => {
-          this.personnage = personnage;
+        personnages => {
+          this.personnages = personnages;
       });
   }
 }
