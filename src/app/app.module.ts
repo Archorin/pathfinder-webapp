@@ -31,7 +31,7 @@ registerLocaleData(localeEn, 'en');
       multi: true,
     },
     {
-      provide: LOCALE_ID, useValue: 'en'
+      provide: LOCALE_ID, useValue: 'fr'
     }
   ],
   bootstrap: [AppComponent]
