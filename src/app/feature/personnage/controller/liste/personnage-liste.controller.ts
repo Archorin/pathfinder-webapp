@@ -7,7 +7,6 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'feature-personnage-liste-controller',
   templateUrl: './personnage-liste.controller.html',
-  styleUrls: ['./personnage-liste.controller.scss'],
   providers: [ PersonnageService ],
 })
 

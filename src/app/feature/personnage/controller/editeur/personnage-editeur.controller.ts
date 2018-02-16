@@ -7,7 +7,6 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'feature-personnage-editeur-controller',
   templateUrl: './personnage-editeur.controller.html',
-  styleUrls: ['./personnage-editeur.controller.scss'],
   providers: [ PersonnageService ],
 })
 export class PersonnageEditeurController implements OnInit {
