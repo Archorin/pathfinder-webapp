@@ -4,15 +4,15 @@ import { CommonModule } from '@angular/common';
 import { SharedModule } from 'app/shared/shared.module';
 import { PersonnageRoutingModule } from './personnage-routing.module';
 
-// Controlleurs
-import { PersonnageListeController } from './controller/liste/personnage-liste.controller';
-import { PersonnageEditeurController } from './controller/editeur/personnage-editeur.controller';
+// Controlleurs de pages
+import { PersonnageListePageComponent } from './page/liste/personnage-liste-page.component';
+import { PersonnageEditeurPageComponent } from './page/editeur/personnage-editeur-page.component';
 
 // Components
-import { FicheComponent } from './editeur/fiche/fiche.component';
-import { PersonnageListeComponent } from './liste/personnage-liste.component';
-import { CiviliteLectureComponent } from './editeur/fiche/civilite/civilite-lecture/civilite-lecture.component';
-import { CiviliteEditionComponent } from './editeur/fiche/civilite/civilite-edition/civilite-edition.component';
+import { FicheComponent } from './component/editeur/fiche/fiche.component';
+import { PersonnageListeComponent } from './component/liste/personnage-liste.component';
+import { CiviliteLectureComponent } from './component/editeur/fiche/civilite/civilite-lecture/civilite-lecture.component';
+import { CiviliteEditionComponent } from './component/editeur/fiche/civilite/civilite-edition/civilite-edition.component';
 
 
 @NgModule({
@@ -22,8 +22,8 @@ import { CiviliteEditionComponent } from './editeur/fiche/civilite/civilite-edit
     PersonnageRoutingModule
   ],
   declarations: [
-    PersonnageEditeurController,
-    PersonnageListeController,
+    PersonnageEditeurPageComponent,
+    PersonnageListePageComponent,
     PersonnageListeComponent,
     FicheComponent,
     CiviliteLectureComponent,

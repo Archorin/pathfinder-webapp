@@ -1,16 +1,16 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { PersonnageService } from 'app/feature/personnage/service/personnage.service';
-import { Personnage } from 'app/feature/personnage/model/personnage';
+import { Personnage } from 'app/feature/personnage/personnage';
 import { Observable } from 'rxjs/Observable';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'feature-personnage-liste-controller',
-  templateUrl: './personnage-liste.controller.html',
+  selector: 'feature-personnage-liste-page',
+  templateUrl: './personnage-liste-page.component.html',
   providers: [ PersonnageService ],
 })
 
-export class PersonnageListeController implements OnInit {
+export class PersonnageListePageComponent implements OnInit {
   @Input() personnages: Personnage[] = new Array<Personnage>();
 
   constructor(

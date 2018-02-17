@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { PersonnageEditeurController } from './controller/editeur/personnage-editeur.controller';
-import { PersonnageListeController } from './controller/liste/personnage-liste.controller';
+import { PersonnageEditeurPageComponent } from './page/editeur/personnage-editeur-page.component';
+import { PersonnageListePageComponent } from './page/liste/personnage-liste-page.component';
 
 const routes: Routes = [
-  { path: '', component: PersonnageListeController },
-  { path: ':id', component: PersonnageEditeurController }
+  { path: '', component: PersonnageListePageComponent },
+  { path: ':id', component: PersonnageEditeurPageComponent }
 ];
 
 @NgModule({
