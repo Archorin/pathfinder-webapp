@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Personnage } from 'app/feature/personnage/personnage';
 
 @Component({
-  selector: 'feature-fiche',
+  selector: 'feature-personnage-fiche',
   templateUrl: './fiche.component.html',
   styleUrls: ['./fiche.component.scss']
 })

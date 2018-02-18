@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, HostListener, ViewChild } from '@angular/core';
 import { Personnage } from 'app/feature/personnage/personnage';
 // tslint:disable-next-line:max-line-length
-import { CiviliteEditionComponent } from 'app/feature/personnage/component/editeur/fiche/civilite/civilite-edition/civilite-edition.component';
+// import { CiviliteEditionComponent } from 'app/feature/personnage/component/fiche/civilite/civilite-edition/civilite-edition.component';
 
 @Component({
   selector: 'feature-personnage-feuille-civilite-lecture',
@@ -12,7 +12,7 @@ import { CiviliteEditionComponent } from 'app/feature/personnage/component/edite
 })
 export class CiviliteLectureComponent implements OnInit {
   @Input() personnage: Personnage;
-  @ViewChild(CiviliteEditionComponent) editionComponent: CiviliteEditionComponent;
+  // @ViewChild(CiviliteEditionComponent) editionComponent: CiviliteEditionComponent;
 
   constructor() {}
 
@@ -22,6 +22,6 @@ export class CiviliteLectureComponent implements OnInit {
   onClick($event) {
     // this.EditionComponent.show();
     console.log('event de click');
-    this.editionComponent.edition();
+    // this.editionComponent.edition();
   }
 }

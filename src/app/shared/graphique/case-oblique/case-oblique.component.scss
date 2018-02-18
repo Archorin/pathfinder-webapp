@@ -51,15 +51,19 @@ article {
   section {
     border: 2px solid #231F20;
     border-top: none;
+    min-height: 1.4rem;
+    line-height: 1.4rem;
   }
 }
 /* Block sombre / bord sombre */
-.caracteristique {
+.dark-slot {
   .row {
     div {
       background-color: #DCDDDE;
       border: 2px solid #231F20;
       border-bottom: none;
+      min-height: 0.6rem;
+      line-height: 0.6rem;
     }
     :first-child {
       border-right: none;
@@ -72,6 +76,33 @@ article {
     border: 2px solid #231F20;
     border-top: none;
     background-color: #DCDDDE;
+    min-height: 1.4rem;
+    line-height: 1.4rem;
+  }
+}
+/* Block blanc / bord clair */
+.white-slot {
+  .row {
+    div {
+      /*background-color: #DCDDDE;*/
+      border: 2px solid #7F8185;
+      border-bottom: none;
+      min-height: 0.6rem;
+      line-height: 0.6rem;
+    }
+    :first-child {
+      border-right: none;
+    }
+    div:last-of-type {
+      border-left: none;
+    }
+  }
+  section {
+    border: 2px solid #7F8185;
+    border-top: none;
+    min-height: 1.4rem;
+    line-height: 1.4rem;
+    /*background-color: #DCDDDE;*/
 
   }
 }
