@@ -57,6 +57,7 @@ article {
 }
 /* Block sombre / bord sombre */
 .dark-slot {
+  padding: 0px 2px 0px 2px !important;
   .row {
     div {
       background-color: #DCDDDE;
@@ -82,27 +83,53 @@ article {
 }
 /* Block blanc / bord clair */
 .white-slot {
+  padding: 0px 2px 0px 2px !important;
   .row {
     div {
       /*background-color: #DCDDDE;*/
-      border: 2px solid #7F8185;
+      border: 2px solid #9EA0A3;
       border-bottom: none;
       min-height: 0.6rem;
       line-height: 0.6rem;
     }
     :first-child {
       border-right: none;
+      color: #9EA0A3;
     }
     div:last-of-type {
       border-left: none;
     }
   }
   section {
-    border: 2px solid #7F8185;
+    border: 2px solid #9EA0A3;
     border-top: none;
     min-height: 1.4rem;
     line-height: 1.4rem;
-    /*background-color: #DCDDDE;*/
-
+  }
+}
+/* Block à fond en grille */
+.grid-slot {
+  padding: 0px 2px 0px 2px !important;
+  .row {
+    div {
+      /*background-color: #DCDDDE;*/
+      border: 2px solid #9EA0A3;
+      border-bottom: none;
+      min-height: 0.6rem;
+      line-height: 0.6rem;
+    }
+    :first-child {
+      border-right: none;
+      color: #9EA0A3;
+    }
+    div:last-of-type {
+      border-left: none;
+    }
+  }
+  section {
+    border: 2px solid #9EA0A3;
+    border-top: none;
+    min-height: 1.4rem;
+    line-height: 1.4rem;
   }
 }

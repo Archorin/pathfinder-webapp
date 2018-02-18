@@ -17,6 +17,7 @@ import { CiviliteLectureComponent } from './component/fiche/civilite/civilite-le
 import { EditeurComponent } from './component/editeur/editeur.component';
 // tslint:disable-next-line:max-line-length
 import { CaracteristiqueLectureComponent } from './component/fiche/caracteristique/caracteristique-lecture/caracteristique-lecture.component';
+import { ResistanceLectureComponent } from './component/fiche/resistance/resistance-lecture/resistance-lecture.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { CaracteristiqueLectureComponent } from './component/fiche/caracteristiq
     CiviliteLectureComponent,
     // CiviliteEditionComponent,
     EditeurComponent,
-    CaracteristiqueLectureComponent
+    CaracteristiqueLectureComponent,
+    ResistanceLectureComponent
   ],
   // Permet d'utiliser une syntaxe <ma-variable> dans les transclusions
   schemas: [NO_ERRORS_SCHEMA]
