@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { PersonnageService } from 'app/feature/personnage/service/personnage.service';
-import { Personnage } from 'app/feature/personnage/personnage';
+import { PersonnageService } from 'app/feature/commun/personnage/service/personnage.service';
+import { Personnage } from 'app/feature/commun/personnage/personnage';
 import { Observable } from 'rxjs/Observable';
 import { ActivatedRoute } from '@angular/router';
 

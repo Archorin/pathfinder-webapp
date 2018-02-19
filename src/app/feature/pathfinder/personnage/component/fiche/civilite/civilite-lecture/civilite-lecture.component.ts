@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, HostListener, ViewChild } from '@angular/core';
-import { Personnage } from 'app/feature/personnage/personnage';
+import { Personnage } from 'app/feature/commun/personnage/personnage';
 // tslint:disable-next-line:max-line-length
 // import { CiviliteEditionComponent } from 'app/feature/personnage/component/fiche/civilite/civilite-edition/civilite-edition.component';
 

@@ -8,7 +8,7 @@ export const routes: Routes = [
     },
     {
         path: 'personnage',
-        loadChildren: 'app/feature/personnage/personnage.module#PersonnageModule'
+        loadChildren: 'app/feature/commun/personnage/personnage.module#PersonnageModule'
     },
     {
         path: 'portail',

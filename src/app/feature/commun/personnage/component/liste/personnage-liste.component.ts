@@ -1,10 +1,10 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Personnage } from 'app/feature/personnage/personnage';
+import { Personnage } from 'app/feature/commun/personnage/personnage';
 
 @Component({
   selector: 'feature-personnage-list',
   templateUrl: './personnage-liste.component.html',
-  styleUrls: ['./personnage-liste.component.css']
+  styleUrls: ['./personnage-liste.component.scss']
 })
 export class PersonnageListeComponent implements OnInit {
   @Input() liste: Personnage[];

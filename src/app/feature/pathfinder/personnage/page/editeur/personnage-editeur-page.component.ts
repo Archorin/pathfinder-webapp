@@ -1,15 +1,15 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { PersonnageService } from 'app/feature/personnage/service/personnage.service';
-import { Personnage } from 'app/feature/personnage/personnage';
+import { PersonnageService } from 'app/feature/commun/personnage/service/personnage.service';
+import { Personnage } from 'app/feature/commun/personnage/personnage';
 import { Observable } from 'rxjs/Observable';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'feature-personnage-fiche-page',
-  templateUrl: './personnage-fiche-page.component.html',
+  selector: 'feature-personnage-editeur-page',
+  templateUrl: './personnage-editeur-page.component.html',
   providers: [ PersonnageService ],
 })
-export class PersonnageFichePageComponent implements OnInit {
+export class PersonnageEditeurPageComponent implements OnInit {
   @Input() personnage: Personnage = new Personnage();
 
   constructor(
