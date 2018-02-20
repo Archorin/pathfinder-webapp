@@ -2,16 +2,30 @@
     font-family: 'pathfinderFiche';
 }
 .first-slot {
-    height: 16vh;
 }
 .second-slot {
-    height: 12vh;
 }
 .bloc {
     border: 2px solid #231F20;
     margin: 0px 10px 0px 5px;
     padding: 5px;
     height: 93%;
+    /* Calage des éléments sur la hauteur du bloc */
+    .standard-row {
+        height: 15%;
+    }
+    .titre-row {
+        height: 4%;
+    }
+    .grid-row-1 {
+        height: 26%;
+    }
+    .grid-row-2 {
+        height: 34%;
+    }
+    .full-height-column {
+        height: 90%
+    }
 }
 .bloc-title {
     height: 7%;
@@ -25,4 +39,7 @@
 }
 .light-font {
     font-size: 0.8rem;
+}
+.long-libelle {
+    font-size: 0.6rem;
 }

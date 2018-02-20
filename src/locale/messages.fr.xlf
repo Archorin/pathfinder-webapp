@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="en" datatype="plaintext" original="ng2.template">
+  <file source-language="fr" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="4a08a0cca36841ee008a9abaa03d0b2b7dfcfe85" datatype="html">
         <source>Liste des personnages</source>
         <target>Liste des personnages</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">app/feature/personnage/liste/personnage-liste.component.ts</context>
+          <context context-type="sourcefile">app/feature/personnage/commun/component/liste/personnage-liste.component.ts</context>
           <context context-type="linenumber">1</context>
         </context-group>
       </trans-unit>
@@ -14,16 +14,24 @@
         <source>Nom</source>
         <target>Nom</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">app/feature/personnage/liste/personnage-liste.component.ts</context>
+          <context context-type="sourcefile">app/feature/personnage/commun/component/liste/personnage-liste.component.ts</context>
           <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="85509fbf1fae9af8d70638a945ccba37873f5d90" datatype="html">
+        <source>Système</source>
+        <target>Système</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/feature/personnage/commun/component/liste/personnage-liste.component.ts</context>
+          <context context-type="linenumber">8</context>
         </context-group>
       </trans-unit>
       <trans-unit id="f2b8eafd866a658fa1dff1cd9390428f9e36725f" datatype="html">
         <source>Édition</source>
         <target>Édition</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">app/feature/personnage/liste/personnage-liste.component.ts</context>
-          <context context-type="linenumber">8</context>
+          <context context-type="sourcefile">app/feature/personnage/commun/component/liste/personnage-liste.component.ts</context>
+          <context context-type="linenumber">9</context>
         </context-group>
       </trans-unit>
     </body>
