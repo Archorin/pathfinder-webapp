@@ -124,6 +124,7 @@ article {
 
 .grid-slot {
     padding: 0px 2px 0px 2px !important;
+    height: 80%;
     .row {
         div {
             /*background-color: #DCDDDE;*/
@@ -149,14 +150,14 @@ article {
         background-image: 
           linear-gradient(
             0deg, transparent 49%, 
-            rgba(50, 50, 50, .05) 50%, 
-            rgba(50, 50, 50, .05) 51%, 
+            rgba(50, 50, 50, .10) 50%, 
+            rgba(50, 50, 50, .10) 51%, 
             transparent 52%, transparent 100%
           ), 
           linear-gradient(
             90deg, transparent 49%, 
-            rgba(50, 50, 50, .05) 50%, 
-            rgba(50, 50, 50, .05) 51%, 
+            rgba(50, 50, 50, .10) 50%, 
+            rgba(50, 50, 50, .10) 51%, 
             transparent 52%, transparent 100%
           );
         height: 100%;

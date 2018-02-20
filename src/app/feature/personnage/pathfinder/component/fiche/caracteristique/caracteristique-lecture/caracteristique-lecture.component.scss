@@ -1,3 +1,22 @@
-.caracteristique-bloc {
-    border: 1px dashed grey;
+:host {
+    font-family: 'pathfinderFiche';
+}
+.bloc {
+    border: 2px solid #231F20;
+    margin: 0px 10px 0px 5px;
+    padding: 5px;
+    height: 93%;
+}
+.bloc-title {
+    height: 7%;
+}
+.row {
+    display: flex;
+    align-items: center;
+}
+.heavy-font {
+    font-weight: 600;
+}
+.light-font {
+    font-size: 0.8rem;
 }

@@ -7,3 +7,10 @@
     bottom: 0px;
     left: 0px;
 }
+:host {
+    font-family: 'pathfinderFiche';
+}
+.row {
+    display: flex;
+    align-items: center;
+}
