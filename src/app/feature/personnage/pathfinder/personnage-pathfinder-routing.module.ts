@@ -4,8 +4,8 @@ import { PersonnageEditeurPageComponent } from './page/editeur/personnage-editeu
 import { PersonnageFichePageComponent } from './page/fiche/personnage-fiche-page.component';
 
 const routes: Routes = [
-  { path: ':id', component: PersonnageEditeurPageComponent },
-  { path: 'edition/:id', component: PersonnageFichePageComponent }
+  { path: 'edition/:id', component: PersonnageEditeurPageComponent },
+  { path: ':id', component: PersonnageFichePageComponent }
 ];
 
 @NgModule({

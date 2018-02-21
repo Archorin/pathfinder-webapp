@@ -13,14 +13,26 @@
     .titre-row {
         height: 4%;
     }
-    .grid-row {
-        height: 31%;
+    .grid-row-1 {
+        height: 40%;
+    }
+    .grid-row-2 {
+        height: 60%;
     }
     .full-height-column {
-        height: 90%
+        height: 100%;
+    }
+    >.row {
+        height: 100%;
+        >.col-4 {
+            height: 100%;
+        }
+    }
+    .grey-bloc {
+        background-color: #DCDDDE;
     }
 }
-.bloc-title {
+.bloc-titre {
     height: 7%;
 }
 .row {
@@ -35,4 +47,7 @@
 }
 .long-libelle {
     font-size: 0.7rem;
+}
+.very-long-libelle {
+    font-size: 0.6rem;
 }

@@ -17,6 +17,7 @@ import { EditeurComponent } from './component/editeur/editeur.component';
 import { CaracteristiqueLectureComponent } from './component/fiche/caracteristique/caracteristique-lecture/caracteristique-lecture.component';
 import { ResistanceLectureComponent } from './component/fiche/resistance/resistance-lecture/resistance-lecture.component';
 import { PointsDeVieLectureComponent } from './component/fiche/points-de-vie/points-de-vie-lecture/points-de-vie-lecture.component';
+import { ValeurDeCombatLectureComponent } from './component/fiche/valeur-de-combat/valeur-de-combat-lecture/valeur-de-combat-lecture.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { PointsDeVieLectureComponent } from './component/fiche/points-de-vie/poi
     EditeurComponent,
     CaracteristiqueLectureComponent,
     ResistanceLectureComponent,
-    PointsDeVieLectureComponent
+    PointsDeVieLectureComponent,
+    ValeurDeCombatLectureComponent
   ],
   // Permet d'utiliser une syntaxe <ma-variable> dans les transclusions
   schemas: [NO_ERRORS_SCHEMA]
