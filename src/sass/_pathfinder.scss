@@ -4,3 +4,26 @@
         url('font/oldsih.ttf') format("truetype"),
         url('font/oldssch.ttf') format("truetype");
 }
+.fiche-pathfinder {
+    font-family: 'pathfinderFiche';
+   .logo-fiche {
+        margin-top: -11.5%;
+        display:block;
+        width: 100%;
+    }
+    .bloc {
+        border: 2px solid #231F20;
+        margin: 0px 10px 0px 5px;
+        padding: 5px;
+        height: 93%;
+    }
+    .bloc-title {
+        height: 7%;
+    }
+    .heavy-font {
+        font-weight: 600;
+    }
+    .light-font {
+        font-size: 0.8rem;
+    }
+}
