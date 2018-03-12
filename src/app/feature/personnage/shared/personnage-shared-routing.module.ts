@@ -7,6 +7,11 @@ const routes: Routes = [
     path: 'pathfinder',
     loadChildren: 'app/feature/personnage/pathfinder/personnage-pathfinder.module#PersonnagePathfinderModule'
   },
+  {
+    path: 'chroniques-oubliees-fantasy',
+    // tslint:disable-next-line:max-line-length
+    loadChildren: 'app/feature/personnage/chroniques-oubliees/fantasy/personnage-chroniques-oubliees-fantasy.module#PersonnageChroniquesOublieesFantasyModule'
+  },
   { path: '', component: PersonnageListePageComponent }
 ];
 
@@ -14,4 +19,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class PersonnageCommunRoutingModule { }
+export class PersonnageSharedRoutingModule { }

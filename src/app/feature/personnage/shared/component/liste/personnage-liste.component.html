@@ -14,7 +14,7 @@
         <th scope="row">{{personnage.id}}</th>
         <td>{{personnage.nom}}</td>
         <td>{{personnage.univers}}</td>
-        <td><a routerLink="/personnage/pathfinder/{{personnage.id}}">
+        <td><a routerLink="/personnage/{{personnage.univers | lowercase}}/{{personnage.id}}">
           <i class="fa fa-pencil-square-o"></i>
         </a></td>
       </tr>

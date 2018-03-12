@@ -2,7 +2,7 @@
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SharedModule } from 'app/shared/shared.module';
-import { PersonnageCommunRoutingModule } from './personnage-commun-routing.module';
+import { PersonnageSharedRoutingModule } from './personnage-shared-routing.module';
 
 // Controlleurs de pages
 import { PersonnageListePageComponent } from './page/liste/personnage-liste-page.component';
@@ -14,7 +14,7 @@ import { PersonnageListeComponent } from './component/liste/personnage-liste.com
   imports: [
     CommonModule,
     SharedModule,
-    PersonnageCommunRoutingModule
+    PersonnageSharedRoutingModule
   ],
   declarations: [
     PersonnageListePageComponent,
@@ -23,4 +23,4 @@ import { PersonnageListeComponent } from './component/liste/personnage-liste.com
   // Permet d'utiliser une syntaxe <ma-variable> dans les transclusions
   schemas: [NO_ERRORS_SCHEMA]
 })
-export class PersonnageCommunModule { }
+export class PersonnageSharedModule { }

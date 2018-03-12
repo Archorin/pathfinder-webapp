@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Personnage } from 'app/feature/personnage/commun/personnage';
+import { Personnage } from 'app/feature/personnage/shared/personnage';
 
 @Component({
   selector: 'feature-personnage-list',
