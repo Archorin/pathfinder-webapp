@@ -13,4 +13,3 @@ export class CiviliteLectureComponent implements OnInit {
   }
 
 }
-
