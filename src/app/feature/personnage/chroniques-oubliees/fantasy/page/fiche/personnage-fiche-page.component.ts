@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-personnage-fiche-page',
+  selector: 'feature-personnage-cof-fiche-page',
   templateUrl: './personnage-fiche-page.component.html'
 })
 export class PersonnageFichePageComponent implements OnInit {

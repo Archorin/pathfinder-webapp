@@ -17,7 +17,9 @@ import { EditeurComponent } from './component/editeur/editeur.component';
 import { CaracteristiqueLectureComponent } from './component/fiche/caracteristique/caracteristique-lecture/caracteristique-lecture.component';
 import { ResistanceLectureComponent } from './component/fiche/resistance/resistance-lecture/resistance-lecture.component';
 import { PointsDeVieLectureComponent } from './component/fiche/points-de-vie/points-de-vie-lecture/points-de-vie-lecture.component';
+// tslint:disable-next-line:max-line-length
 import { ValeurDeCombatLectureComponent } from './component/fiche/valeur-de-combat/valeur-de-combat-lecture/valeur-de-combat-lecture.component';
+import { CiviliteEditionComponent } from './component/editeur/civilite/civilite-edition/civilite-edition.component';
 
 
 @NgModule({
@@ -35,7 +37,8 @@ import { ValeurDeCombatLectureComponent } from './component/fiche/valeur-de-comb
     CaracteristiqueLectureComponent,
     ResistanceLectureComponent,
     PointsDeVieLectureComponent,
-    ValeurDeCombatLectureComponent
+    ValeurDeCombatLectureComponent,
+    CiviliteEditionComponent
   ],
   // Permet d'utiliser une syntaxe <ma-variable> dans les transclusions
   schemas: [NO_ERRORS_SCHEMA]
