@@ -1,0 +1,14 @@
+.page[size="A4"] {
+  display: table;
+  margin: 0 auto;
+  margin-bottom: 15mm;
+  border: 0;
+  /*background: url("./../assets/paper.jpg");*/
+  background-repeat: no-repeat;
+  background-position: left top;
+  width: $A4-width;
+  height: $A4-height;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}

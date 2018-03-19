@@ -1,0 +1,33 @@
+/* Blocks titles, chapters and pagination */
+.medieval-font {
+  font-family: 'Black family';
+}
+.manuscrit-font {
+  font-family: 'DJB My Boyfriends Handwriting';
+}
+.regular-font {
+  font-family: 'Wishing Well';
+}
+.medieval-title {
+  @extend .medieval-font;
+  font-size: 8mm;
+  color: $color-title;
+}
+.medieval-title-block {
+  @extend .medieval-font;
+  font-size: 8mm;
+  background: $color-title;
+  padding: 1mm;
+  margin: 0mm;
+  color: $color-scroll;
+}
+.manuscrit-text {
+  @extend .manuscrit-font;
+  font-size: 3.8mm;
+  color: $color-handwritting;
+}
+.regular-text {
+  @extend .regular-font;
+  font-size: 3mm;
+  color: $color-text;
+}

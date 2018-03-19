@@ -1,0 +1,31 @@
+.table {
+    /*display: table;*/
+}
+/* column */
+.column {
+  display: table-cell;
+  height: $A4-height;
+  position: relative;
+  >:first-child {
+    padding: 20mm 3mm 20mm 3mm;
+    height: $A4-height - 40;
+    line-height:6.5mm;
+    text-align: left;
+  }/*
+  +.column .left {
+    border: 1px solid $color-title;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-top-style: none;
+  }
+  aside {
+    border: 1px solid $color-title;
+    border-right-style: none;
+    border-radius: 2mm 0mm 0mm 2mm;
+    position: relative;
+    padding: 3mm;
+    background: rgba(255, 255, 255, 0.3);
+    text-align: left;
+    margin: 10mm, 10mm, 10mm, 0;
+  }*/
+}

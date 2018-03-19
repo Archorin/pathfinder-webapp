@@ -1,0 +1,40 @@
+footer {
+  @extend .paginate;
+  bottom : 0;
+  .pagination {
+    padding-top: 0.7cm;
+    width: 10mm;
+    display: block;
+    /*text-align: left;*/
+    position: absolute;
+    right: 0;
+    color: #c5b68f;
+    z-index: 2;
+    font-size: 4mm;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Black family';
+    height: 15mm;
+    /*text-align: right;*/
+  }
+  .text{
+    padding-top: 3.5mm;
+    width: auto;
+    display: block;
+    text-align: left;
+    position: absolute;
+    right: 48px;
+    color: $color-title;
+    z-index: 2;
+    font-family: 'Black family';
+    font-size: 6mm;    
+  }
+  .pagination-pic {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: $A4-width;
+    z-index: 1;
+  }
+}

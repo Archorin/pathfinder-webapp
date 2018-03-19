@@ -1,0 +1,36 @@
+header {
+  @extend .paginate;
+  top : 0;
+  .chapitre {
+    padding-top: 3.5mm;
+    width: 10.5mm;
+    display: block;
+    text-align: left;
+    position: absolute;
+    right: 0;
+    color: #c5b68f;
+    z-index: 2;
+    font-size: 7mm;
+    text-align: center;
+  }
+  .text {
+    padding-top: 3.5mm;
+    width: auto;
+    display: block;
+    text-align: left;
+    position: absolute;
+    right: 48px;
+    color: $color-title;
+    z-index: 2;
+    font-family: 'Black family';
+    font-size: 8mm;
+  }
+  .chapitre-pic {
+    display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: $A4-width;
+	z-index: 1;
+  }
+}
