@@ -1,30 +1,36 @@
 @font-face {
   font-family: 'Black family';
-  src: url('/assets/fonts/Embossed Black Normal.eot'), /*url('/assets/fonts/Embossed Black Normal.ttf') format('truetype'),*/ url('/assets/fonts/Embossed Black Normal.woff') format('woff');
+  src: url('/assets/fonts/Embossed_Black_Normal/Embossed Black Normal.eot'), url('/assets/fonts/Embossed_Black_Normal/Embossed Black Normal.ttf') format('truetype'), url('/assets/fonts/Embossed_Black_Normal/Embossed Black Normal.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Wishing Well';
-  src: url('/assets/fonts/Wishing Well.eot'), url('/assets/fonts/Wishing Well.ttf') format('truetype'), url('/assets/fonts/Wishing Well.woff') format('woff');
+  src: url('/assets/fonts/Wishing_Well/Wishing Well.eot'), url('/assets/fonts/Wishing_Well/Wishing Well.ttf') format('truetype'), url('/assets/fonts/Wishing_Well/Wishing Well.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'DJB My Boyfriends Handwriting';
-  src: url('/assets/fonts/DJB My Boyfriends Handwriting.eot'), url('/assets/fonts/DJB My Boyfriends Handwriting.ttf') format('truetype'), url('/assets/fonts/DJB My Boyfriends Handwriting.woff') format('woff');
+  src: url('/assets/fonts/DJB_My_Boyfriends_Handwriting/DJB My Boyfriends Handwriting.eot'), url('/assets/fonts/DJB_My_Boyfriends_Handwriting/DJB My Boyfriends Handwriting.ttf') format('truetype'), url('/assets/fonts/DJB_My_Boyfriends_Handwriting/DJB My Boyfriends Handwriting.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Ellianarelle s Path';
-  src: url('/assets/fonts/Ellianarelle s Path.eot'), url('/assets/fonts/Ellianarelle s Path.ttf') format('truetype'), url('/assets/fonts/Ellianarelle s Path.woff') format('woff');
+  src: url('/assets/fonts/Ellianarelle_s_Path/Ellianarelle s Path.eot'), url('/assets/fonts/Ellianarelle_s_Path/Ellianarelle s Path.ttf') format('truetype'), url('/assets/fonts/Ellianarelle_s_Path/Ellianarelle s Path.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'JaspersHandwriting';
-  src: url('/assets/fonts/JaspersHandwriting.eot'), url('/assets/fonts/JaspersHandwriting.ttf') format('truetype'), url('/assets/fonts/JaspersHandwriting.woff') format('woff');
+  src: url('/assets/fonts/JaspersHandwriting/JaspersHandwriting.eot'), url('/assets/fonts/JaspersHandwriting/JaspersHandwriting.ttf') format('truetype'), url('/assets/fonts/JaspersHandwriting/JaspersHandwriting.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OldLondon';
+  src: url('/assets/fonts/OldLondon/OldLondon.ttf') format('truetype'), url('/assets/fonts/OldLondon/OldLondonAlternate.ttf') format('truetype'), url('/assets/fonts/OldLondon/Olondon_.otf'), url('/assets/fonts/OldLondon/Olondona.otf');
   font-weight: normal;
   font-style: normal;
 }
