@@ -5,6 +5,12 @@ import { PersonnageChroniquesOublieesFantasyRoutingModule } from './personnage-c
 import { PersonnageFichePageComponent } from './page/fiche/personnage-fiche-page.component';
 import { FicheComponent } from './component/fiche/fiche.component';
 import { CiviliteLectureComponent } from './component/fiche/civilite-lecture/civilite-lecture.component';
+import { CaracteristiqueLectureComponent } from './component/fiche/caracteristique-lecture/caracteristique-lecture.component';
+import { CombatLectureComponent } from './component/fiche/combat-lecture/combat-lecture.component';
+import { VitaliteLectureComponent } from './component/fiche/vitalite-lecture/vitalite-lecture.component';
+import { DefenseLectureComponent } from './component/fiche/defense-lecture/defense-lecture.component';
+import { ArmeLectureComponent } from './component/fiche/arme-lecture/arme-lecture.component';
+import { CapaciteRacialeLectureComponent } from './component/fiche/capacite-raciale-lecture/capacite-raciale-lecture.component';
 
 @NgModule({
   imports: [
@@ -14,7 +20,13 @@ import { CiviliteLectureComponent } from './component/fiche/civilite-lecture/civ
   declarations: [
     PersonnageFichePageComponent,
     FicheComponent,
-    CiviliteLectureComponent
+    CiviliteLectureComponent,
+    CaracteristiqueLectureComponent,
+    CombatLectureComponent,
+    VitaliteLectureComponent,
+    DefenseLectureComponent,
+    ArmeLectureComponent,
+    CapaciteRacialeLectureComponent
   ]
 })
 export class PersonnageChroniquesOublieesFantasyModule { }
