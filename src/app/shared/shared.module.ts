@@ -15,9 +15,10 @@ import { TacheComponent } from './gestionnaire-de-taches/tache/tache.component';
 
 // tslint:disable-next-line:max-line-length
 import { GestionnaireDeTachesLightComponent } from './gestionnaire-de-taches-light/gestionnaire-de-taches-light/gestionnaire-de-taches-light.component';
-import { CaseObliqueComponent } from './graphique/case-oblique/case-oblique.component';
+import { CaseObliqueComponent } from './graphique/pathfinder/case-oblique/case-oblique.component';
 import { PictoComponent } from './wrapper/picto/picto.component';
 import { ModalComponent } from './wrapper/modal/modal.component';
+import { CaseComponent } from './graphique/chroniques-oubliees/case/case.component';
 
 @NgModule({
   imports: [
@@ -35,7 +36,8 @@ import { ModalComponent } from './wrapper/modal/modal.component';
     GestionnaireDeTachesLightComponent,
     CaseObliqueComponent,
     PictoComponent,
-    ModalComponent
+    ModalComponent,
+    CaseComponent
   ],
   exports: [
     GestionnaireDeTachesLightComponent,

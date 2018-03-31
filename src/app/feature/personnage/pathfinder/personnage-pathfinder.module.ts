@@ -10,16 +10,15 @@ import { PersonnageFichePageComponent } from './page/fiche/personnage-fiche-page
 
 // Components
 import { FicheComponent } from './component/fiche/fiche.component';
-import { CiviliteLectureComponent } from './component/fiche/civilite/civilite-lecture/civilite-lecture.component';
-// import { CiviliteEditionComponent } from './component/fiche/civilite/civilite-edition/civilite-edition.component';
+import { CiviliteComponent } from './component/fiche/civilite/civilite.component';
 import { EditeurComponent } from './component/editeur/editeur.component';
+
 // tslint:disable-next-line:max-line-length
-import { CaracteristiqueLectureComponent } from './component/fiche/caracteristique/caracteristique-lecture/caracteristique-lecture.component';
-import { ResistanceLectureComponent } from './component/fiche/resistance/resistance-lecture/resistance-lecture.component';
-import { PointsDeVieLectureComponent } from './component/fiche/points-de-vie/points-de-vie-lecture/points-de-vie-lecture.component';
+import { CaracteristiqueComponent } from './component/fiche/caracteristique/caracteristique.component';
+import { ResistanceComponent } from './component/fiche/resistance/resistance.component';
+import { PointsDeVieComponent } from './component/fiche/points-de-vie/points-de-vie.component';
 // tslint:disable-next-line:max-line-length
-import { ValeurDeCombatLectureComponent } from './component/fiche/valeur-de-combat/valeur-de-combat-lecture/valeur-de-combat-lecture.component';
-import { CiviliteEditionComponent } from './component/editeur/civilite/civilite-edition/civilite-edition.component';
+import { ValeurDeCombatComponent } from './component/fiche/valeur-de-combat/valeur-de-combat.component';
 
 
 @NgModule({
@@ -32,13 +31,12 @@ import { CiviliteEditionComponent } from './component/editeur/civilite/civilite-
     PersonnageEditeurPageComponent,
     PersonnageFichePageComponent,
     FicheComponent,
-    CiviliteLectureComponent,
+    CiviliteComponent,
     EditeurComponent,
-    CaracteristiqueLectureComponent,
-    ResistanceLectureComponent,
-    PointsDeVieLectureComponent,
-    ValeurDeCombatLectureComponent,
-    CiviliteEditionComponent
+    CaracteristiqueComponent,
+    ResistanceComponent,
+    PointsDeVieComponent,
+    ValeurDeCombatComponent
   ],
   // Permet d'utiliser une syntaxe <ma-variable> dans les transclusions
   schemas: [NO_ERRORS_SCHEMA]
