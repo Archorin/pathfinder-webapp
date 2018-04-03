@@ -11,11 +11,13 @@ import { VitaliteComponent } from './component/fiche/vitalite/vitalite.component
 import { DefenseComponent } from './component/fiche/defense/defense.component';
 import { ArmeComponent } from './component/fiche/arme/arme.component';
 import { CapaciteRacialeComponent } from './component/fiche/capacite-raciale/capacite-raciale.component';
+import { SharedModule } from '../../../../shared/shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    PersonnageChroniquesOublieesFantasyRoutingModule
+    PersonnageChroniquesOublieesFantasyRoutingModule,
+    SharedModule
   ],
   declarations: [
     PersonnageFichePageComponent,

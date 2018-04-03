@@ -1,0 +1,15 @@
+@import "sass/_couleur.scss";
+
+/*
+* Chroniques Oubliées Fantasy
+*/
+.cof-case {
+    /*color: $couleurPrincipale;*/
+    border: 1px solid $couleurPrincipale;
+
+    width: auto;
+    display: inline-block;
+    min-width: 100%;
+    padding: 5px;
+    text-align: left;
+}

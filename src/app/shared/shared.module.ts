@@ -45,7 +45,8 @@ import { CaseComponent } from './graphique/chroniques-oubliees/case/case.compone
     TacheComponent,
     CaseObliqueComponent,
     PictoComponent,
-    ModalComponent
+    ModalComponent,
+    CaseComponent
   ]
 })
 export class SharedModule { }
