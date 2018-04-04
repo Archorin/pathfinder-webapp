@@ -1,8 +1,12 @@
-/* header, footer */
-.paginate {
-  display: block;
-  position: absolute;
-  left: 0;
-  height: 15mm;
-  width: $A4-width;
+.bloc-top {
+    margin-top: 55px;
+}
+.bloc {
+    color: $couleurPrincipale;
+
+    .titre {
+        font-weight: 600;
+        font-size: 0.9rem;
+        text-align: center;
+    }
 }

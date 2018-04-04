@@ -11,20 +11,23 @@
 .regular-font {
   font-family: 'Wishing Well';
 }
+
 .medieval-title {
   @extend .medieval-font-light;
   font-size: 2.8rem;
-  color: $color-title;
+  color: $couleurPrincipale;
 }
+
 .medieval-subtitle {
   @extend .medieval-font-light;
   font-size: 1.6rem;
-  color: $color-title;
+  color: $couleurPrincipale;
 }
+/*
 .medieval-title-block {
   @extend .medieval-font;
   font-size: 8mm;
-  background: $color-title;
+  background: $couleurPrincipale;
   padding: 1mm;
   margin: 0mm;
   color: $color-scroll;
@@ -38,4 +41,4 @@
   @extend .regular-font;
   font-size: 3mm;
   color: $color-text;
-}
+}*/

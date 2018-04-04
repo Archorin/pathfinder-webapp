@@ -7,10 +7,13 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CaseComponent implements OnInit {
   @Input() classe: string;
+  @Input() headerFiligrane: string;
   @Input() header: string;
   @Input() body: string;
+  @Input() bodyFiligrane: string;
   @Input() content: string;
   @Input() footer: string;
+  @Input() footerFiligrane: string;
 
   constructor() { }
 

@@ -12,6 +12,7 @@ import { DefenseComponent } from './component/fiche/defense/defense.component';
 import { ArmeComponent } from './component/fiche/arme/arme.component';
 import { CapaciteRacialeComponent } from './component/fiche/capacite-raciale/capacite-raciale.component';
 import { SharedModule } from '../../../../shared/shared.module';
+import { PremierSegmentComponent } from './component/fiche/voie/premier-segment/premier-segment.component';
 
 @NgModule({
   imports: [
@@ -28,7 +29,8 @@ import { SharedModule } from '../../../../shared/shared.module';
     VitaliteComponent,
     DefenseComponent,
     ArmeComponent,
-    CapaciteRacialeComponent
+    CapaciteRacialeComponent,
+    PremierSegmentComponent
   ]
 })
 export class PersonnageChroniquesOublieesFantasyModule { }

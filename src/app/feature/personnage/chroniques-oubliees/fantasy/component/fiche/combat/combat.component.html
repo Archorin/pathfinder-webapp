@@ -1,3 +1,64 @@
-<p>
-  combat works!
-</p>
+<div class="bloc bloc-top">
+  <div class="row no-gutters">
+    <div class="col-5 titre text-left">COMBAT</div>
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col titre">Total</div>
+  </div>
+  <div class="row no-gutters">
+    <div class="col-5">
+        <shared-graphique-chronique-oubliees-case [body]="'INITIATIVE'" [classe]="'negative-marron basique'"></shared-graphique-chronique-oubliees-case>
+    </div>
+    <div class="col">
+        <shared-graphique-chronique-oubliees-case [bodyFiligrane]="'DEX'" [content]="'12'" [classe]="'basique'"></shared-graphique-chronique-oubliees-case>
+    </div>
+    <div class="col">
+        <shared-graphique-chronique-oubliees-case [content]="'12'" [classe]="'basique'"></shared-graphique-chronique-oubliees-case>
+    </div>
+    <div class="col">
+        <shared-graphique-chronique-oubliees-case [content]="'12'" [classe]="'basique'"></shared-graphique-chronique-oubliees-case>
+    </div>
+  </div>
+  <div class="row no-gutters">
+      <div class="col-5">
+          <shared-graphique-chronique-oubliees-case [header]="'ATTAQUE'" [body]="'AU CONTACT'" [classe]="'negative-marron'"></shared-graphique-chronique-oubliees-case>
+      </div>
+      <div class="col">
+          <shared-graphique-chronique-oubliees-case [bodyFiligrane]="'FOR'" [classe]="'basique'" [content]="'12'"></shared-graphique-chronique-oubliees-case>
+      </div>
+      <div class="col">
+          <shared-graphique-chronique-oubliees-case [bodyFiligrane]="'NIV'" [classe]="'basique'" [content]="'12'"></shared-graphique-chronique-oubliees-case>
+      </div>
+      <div class="col">
+          <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="'12'"></shared-graphique-chronique-oubliees-case>
+      </div>
+  </div>
+  <div class="row no-gutters">
+      <div class="col-5">
+          <shared-graphique-chronique-oubliees-case [header]="'ATTAQUE'" [body]="'À DISTANCE'" [classe]="'negative-marron'"></shared-graphique-chronique-oubliees-case>
+      </div>
+      <div class="col">
+          <shared-graphique-chronique-oubliees-case [bodyFiligrane]="'DEX'" [classe]="'basique'" [content]="'12'"></shared-graphique-chronique-oubliees-case>
+      </div>
+      <div class="col">
+          <shared-graphique-chronique-oubliees-case [bodyFiligrane]="'NIV'" [classe]="'basique'" [content]="'12'"></shared-graphique-chronique-oubliees-case>
+      </div>
+      <div class="col">
+          <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="'12'"></shared-graphique-chronique-oubliees-case>
+      </div>
+  </div>
+  <div class="row no-gutters">
+      <div class="col-5">
+          <shared-graphique-chronique-oubliees-case [header]="'ATTAQUE'" [body]="'MAGIQUE'" [classe]="'negative-marron'"></shared-graphique-chronique-oubliees-case>
+      </div>
+      <div class="col">
+          <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="'12'"></shared-graphique-chronique-oubliees-case>
+      </div>
+      <div class="col">
+          <shared-graphique-chronique-oubliees-case [bodyFiligrane]="'NIV'" [classe]="'basique'" [content]="'12'"></shared-graphique-chronique-oubliees-case>
+      </div>
+      <div class="col">
+          <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="'12'"></shared-graphique-chronique-oubliees-case>
+      </div>
+  </div>
+</div>

@@ -1,5 +1,16 @@
-<div class="cof-case {{classe}}">
-  <div class="cof-case-header">{{header}}</div>
-  <div class="cof-case-body">{{body}} {{content}}</div>
-  <div class="cof-case-footer">{{footer}}</div>
-</div> 
+<div class="bloc {{classe}}">
+  <div class="cof-case">
+    <div class="cof-case-header">
+        <div class="texte-efface">{{headerFiligrane}}</div>
+        {{header}}
+      </div>
+    <div class="cof-case-body">
+      <div class="texte-efface">{{bodyFiligrane}}</div>
+      {{body}} {{content}}
+    </div>
+    <div class="cof-case-footer">
+        <div class="texte-efface">{{footerFiligrane}}</div>
+        {{footer}}
+      </div>
+  </div>
+</div>

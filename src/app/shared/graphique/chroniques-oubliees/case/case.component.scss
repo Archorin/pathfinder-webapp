@@ -1,15 +1,109 @@
 @import "sass/_couleur.scss";
-
 /*
 * Chroniques Oubliées Fantasy
 */
-.cof-case {
-    /*color: $couleurPrincipale;*/
-    border: 1px solid $couleurPrincipale;
 
-    width: auto;
-    display: inline-block;
-    min-width: 100%;
-    padding: 5px;
-    text-align: left;
+.bloc {
+    padding: 2px;
+    .cof-case {
+        border: 1px solid $couleurPrincipale;
+        width: auto;
+        display: inline-block;
+        min-width: 100%;
+        text-align: center;
+        padding: 3px;
+
+        .cof-case-header,
+        .cof-case-footer {
+            font-size: 0.55rem;
+        }
+
+        .cof-case-body {
+            width: auto;
+            display: inline-block;
+            min-width: 100%;
+            font-size: 1rem;
+            div {
+                line-height: 2.5rem;
+            }
+        }
+        .texte-efface {
+            color: $grisEfface !important;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: -1;
+        }
+    }
+}
+
+/*
+* Bloc complet sur fond marron
+*/
+.negative-marron {
+    .cof-case {
+        color: white;
+        background-color: $couleurPrincipale;
+        font-weight: 600;
+    }
+}
+
+/*
+* Bloc basique sur fond blanc à bord gris clair
+*/
+.basique-bord-gris {
+    $border-color: #bfada2;
+
+    .cof-case {
+        border: 1px solid $border-color !important;
+
+        .cof-case-body {
+            line-height: 1.55em;
+        }
+    }
+}
+/*
+* Bloc basique
+*/
+.basique {
+    .cof-case {
+        .cof-case-body {
+            line-height: 1.55em;
+        }
+    }
+}
+.basique-left {
+    @extend .basique;
+    .cof-case {
+        .cof-case-body {
+            text-align: left;
+            font-size: 0.8rem;
+            line-height: 1.55rem;
+        }
+        .cof-case-header,
+        .cof-case-footer {
+            text-align: left;
+            font-size: 0.8rem;
+            line-height: 1.55rem;
+        }
+    }
+}
+/*
+* Bloc PV vitalité
+*/
+.large-double {
+    .cof-case {
+        /*font-weight: 600;*/
+
+        .cof-case-header,
+        .cof-case-footer {
+            font-size: 0.65rem;
+            text-align: left;
+        }
+        .cof-case-body {
+            line-height: 2.5rem;
+            font-weight: none;
+        }
+    }
 }

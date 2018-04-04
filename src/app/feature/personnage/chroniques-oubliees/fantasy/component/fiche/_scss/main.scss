@@ -1,6 +1,6 @@
 /* base */
 @import 'base/sizes';
-/*@import 'sections/common';*/
+
 @import 'base/colours';
 @import 'base/fonts';
 /*@import 'base/base';*/
@@ -8,8 +8,4 @@
 /*@import 'base/print';*/
 
 /* sections */
-/*@import 'sections/page';
-@import 'sections/column';
-@import 'sections/header';
-@import 'sections/footer';
-@import 'sections/bulle';*/
+@import 'sections/common';

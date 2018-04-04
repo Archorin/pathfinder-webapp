@@ -1,0 +1,20 @@
+@import '../../fiche.shared.scss';
+
+.bloc {
+    margin-top: 0.8rem;
+
+    .titre-voie {
+        background-color: $couleurPrincipale;
+        color: white;
+        border: none;
+        text-align: center;
+    }
+    .row-voie {
+        height: 8rem;
+        line-height: 1rem;
+    }
+    .col {
+        border-right: 1px solid #6a3d24;
+        border-bottom: 1px solid #6a3d24;
+    }
+}

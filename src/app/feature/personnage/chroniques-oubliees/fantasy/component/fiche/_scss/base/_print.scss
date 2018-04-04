@@ -1,8 +1,12 @@
 @media print {
-  body, .page[size="A4"] {
-    margin: 0;
-  }
+    body,
+    .page[size="A4"] {
+        margin: 0;
+    }
 }
+
 @media print {
-    .page {page-break-after: always;}
+    .page {
+        page-break-after: always;
+    }
 }
