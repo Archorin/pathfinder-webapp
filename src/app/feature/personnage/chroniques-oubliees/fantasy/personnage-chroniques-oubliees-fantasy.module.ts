@@ -13,6 +13,12 @@ import { ArmeComponent } from './component/fiche/arme/arme.component';
 import { CapaciteRacialeComponent } from './component/fiche/capacite-raciale/capacite-raciale.component';
 import { SharedModule } from '../../../../shared/shared.module';
 import { PremierSegmentComponent } from './component/fiche/voie/premier-segment/premier-segment.component';
+import { SecondSegmentComponent } from './component/fiche/voie/second-segment/second-segment.component';
+import { HistoriqueCaractereComponent } from './component/fiche/historique-caractere/historique-caractere.component';
+import { EquipementComponent } from './component/fiche/equipement/equipement.component';
+import { ReglesOptionnellesComponent } from './component/fiche/regles-optionnelles/regles-optionnelles.component';
+import { DescriptionComponent } from './component/fiche/description/description.component';
+import { VoieSecondSegmentComponent } from './component/fiche/voie/voie-second-segment/voie-second-segment.component';
 
 @NgModule({
   imports: [
@@ -30,7 +36,13 @@ import { PremierSegmentComponent } from './component/fiche/voie/premier-segment/
     DefenseComponent,
     ArmeComponent,
     CapaciteRacialeComponent,
-    PremierSegmentComponent
+    PremierSegmentComponent,
+    SecondSegmentComponent,
+    HistoriqueCaractereComponent,
+    EquipementComponent,
+    ReglesOptionnellesComponent,
+    DescriptionComponent,
+    VoieSecondSegmentComponent
   ]
 })
 export class PersonnageChroniquesOublieesFantasyModule { }
