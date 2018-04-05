@@ -2,7 +2,9 @@ import { Component, OnInit, Input } from '@angular/core';
 
 const associationPictos = {
   // Font Awesome pictos
-  'double-chevron-gauche': 'fa-angle-double-left'
+  'double-chevron-gauche': 'fa-angle-double-left',
+  'checkbox': 'fa-square-o',
+  'checkbox-checked': 'fa-check-square-o'
 };
 
 @Component({

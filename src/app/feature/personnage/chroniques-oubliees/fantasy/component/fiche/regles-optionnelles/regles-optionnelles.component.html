@@ -1,3 +1,98 @@
-<p>
-  regles-optionnelles works!
-</p>
+<div class="bloc">
+  <div class="row no-gutters">
+    <div class="col titre text-left">
+      RÈGLES OPTIONNELLES
+    </div>
+  </div>
+  <br />
+  <div class="row no-gutters">
+    <div class="col row no-gutters decalage-bloc">
+      <div class="col-5">
+        <div class="row no-gutters">
+          <div class="col">
+            <shared-graphique-chronique-oubliees-case [body]="'PC'" [footer]="'Pts de chance'" [classe]="'negative-marron'"></shared-graphique-chronique-oubliees-case>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col">
+            <shared-graphique-chronique-oubliees-case [body]="'&nbsp;'" [bodyFiligrane]="'MAX'" [classe]="'large-double'"></shared-graphique-chronique-oubliees-case>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col">
+            <shared-graphique-chronique-oubliees-case [body]="'&nbsp;'" [bodyFiligrane]="'ACTUEL'" [classe]="'large-double'"></shared-graphique-chronique-oubliees-case>
+          </div>
+        </div>
+      </div>
+      <div class="col-7">
+        <div class="row no-gutters">
+          <div class="col">
+            <shared-graphique-chronique-oubliees-case [body]="'PR'" [footer]="'Points de récupération'" [classe]="'negative-marron'"></shared-graphique-chronique-oubliees-case>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col champ-libre">
+            <br />
+            <div class="row no-gutters">
+              <div class="col"></div>
+              <div class="col">
+                <picto [libelle]="'checkbox'"></picto>
+              </div>
+              <div class="col"></div>
+              <div class="col">
+                <picto [libelle]="'checkbox-checked'"></picto>
+              </div>
+              <div class="col"></div>
+              <div class="col">
+                <picto [libelle]="'checkbox-checked'"></picto>
+              </div>
+              <div class="col"></div>
+              <div class="col">
+                <picto [libelle]="'checkbox'"></picto>
+              </div>
+              <div class="col"></div>
+            </div>
+            <div class="row no-gutters option-label text-center">
+              <div *ngIf="1" class="col gris">
+                [1 dé de Vie + Mod de Con + Niveau] PV
+              </div>
+              <div *ngIf="!1" class="col principal">
+                12
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col row no-gutters">
+      <div class="col-5">
+        <div class="row no-gutters">
+          <div class="col">
+            <shared-graphique-chronique-oubliees-case [body]="'PM'" [footer]="'Pts de mana'" [classe]="'negative-marron'"></shared-graphique-chronique-oubliees-case>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col">
+            <shared-graphique-chronique-oubliees-case [body]="'&nbsp;'" [bodyFiligrane]="'MAX'" [classe]="'large-double'"></shared-graphique-chronique-oubliees-case>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col">
+            <shared-graphique-chronique-oubliees-case [body]="'&nbsp;'" [bodyFiligrane]="'ACTUEL'" [classe]="'large-double'"></shared-graphique-chronique-oubliees-case>
+          </div>
+        </div>
+      </div>
+      <div class="col-7">
+        <div class="row no-gutters">
+          <div class="col">
+            <shared-graphique-chronique-oubliees-case [body]="'Épuisement'" [footer]="'Magique'" [classe]="'negative-marron'"></shared-graphique-chronique-oubliees-case>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col champ-libre">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

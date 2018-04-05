@@ -1,0 +1,26 @@
+@import '../fiche.shared.scss';
+.bloc {
+    margin-top: 0.8rem;
+
+    .titre {
+        background-color: $couleurPrincipale;
+        color: white;
+        border: none;
+        text-align: center;
+        font-weight: 600;
+        padding: 5px 0 2px 0;
+    }
+    .champ-libre {
+        border-right: 1px solid #6a3d24;
+        border-bottom: 1px solid #6a3d24;
+        border-left: 1px solid #6a3d24;
+        height: 97mm;
+    }
+    .champ-libre-row {
+        border-bottom: 1px dotted #d6c9c2;
+        height: 2rem;
+    }
+    .champ-libre-row-separator {
+        border-right: 1px dotted #d6c9c2;
+    }
+}

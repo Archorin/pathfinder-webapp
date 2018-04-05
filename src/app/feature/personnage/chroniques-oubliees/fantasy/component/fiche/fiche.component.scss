@@ -11,9 +11,12 @@ div[size="A4"] {
 @page {
     size: A4;
     margin: 0;
-}*/
-
+}
+*/
 @media print {
+    div[size="A4"] {
+        page-break-after: always;
+    }
     html,
     body {
         width: 210mm;
@@ -25,6 +28,7 @@ div[size="A4"] {
     }
     /* ... the rest of the rules ... */
 }
+
 .decalage-bloc {
     padding-right: 12px;
 }

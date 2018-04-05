@@ -18,7 +18,6 @@ import { HistoriqueCaractereComponent } from './component/fiche/historique-carac
 import { EquipementComponent } from './component/fiche/equipement/equipement.component';
 import { ReglesOptionnellesComponent } from './component/fiche/regles-optionnelles/regles-optionnelles.component';
 import { DescriptionComponent } from './component/fiche/description/description.component';
-import { VoieSecondSegmentComponent } from './component/fiche/voie/voie-second-segment/voie-second-segment.component';
 
 @NgModule({
   imports: [
@@ -41,8 +40,7 @@ import { VoieSecondSegmentComponent } from './component/fiche/voie/voie-second-s
     HistoriqueCaractereComponent,
     EquipementComponent,
     ReglesOptionnellesComponent,
-    DescriptionComponent,
-    VoieSecondSegmentComponent
+    DescriptionComponent
   ]
 })
 export class PersonnageChroniquesOublieesFantasyModule { }
