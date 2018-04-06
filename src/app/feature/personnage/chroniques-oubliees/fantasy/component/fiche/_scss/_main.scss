@@ -1,0 +1,17 @@
+////
+/// Fiche de personnage Chroniques Oubliées Fantasy
+/// @group personnage/chroniques-oubliees/fantasy/fiche
+/// @author Anthony ROCHET
+////
+
+/* abstract */
+@import 'abstract/variables';
+@import 'abstract/placeholders';
+@import 'abstract/functions';
+@import 'abstract/mixins';
+
+/* base */
+@import 'base/fonts';
+@import 'base/typographies';
+@import 'base/base';
+@import 'layout/print';

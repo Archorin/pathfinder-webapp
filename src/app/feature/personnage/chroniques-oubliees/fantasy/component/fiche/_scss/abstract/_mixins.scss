@@ -1,0 +1,21 @@
+////
+/// Fiche de personnage Chroniques Oubliées Fantasy
+/// @group personnage/chroniques-oubliees/fantasy/fiche
+/// @author Anthony ROCHET
+////
+
+/// Mixin de dimentionnement permettant de définir la taille d'un élément
+/// @param {number} $width [null] - Largeur du bloc
+/// @param {number} $height [null] - Hauteur du bloc
+/// @param {mixed} $unite [px] - Une unitée de mesure compatible
+/// @example 
+///     sizing(25, 25, px)
+/// @output width, height
+@mixin sizing($width: null, $height: null, $unite: px){
+    @if $width {
+        width: $width $unite;
+    }
+    @if $height {
+        height: $height $unite;
+    }
+}
