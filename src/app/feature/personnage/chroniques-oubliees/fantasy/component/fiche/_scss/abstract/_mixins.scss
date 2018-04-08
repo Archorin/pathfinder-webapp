@@ -8,14 +8,40 @@
 /// @param {number} $width [null] - Largeur du bloc
 /// @param {number} $height [null] - Hauteur du bloc
 /// @param {mixed} $unite [px] - Une unitée de mesure compatible
+/// @param {boolean} $important [false] - Force la priorité sur ce style
 /// @example 
 ///     sizing(25, 25, px)
-/// @output width, height
-@mixin sizing($width: null, $height: null, $unite: px){
+/// @outputs Définit la largeur ainsi que la hauteur d'un bloc (width, height) dans une unitée donnée
+@mixin sizing($width: null, $height: null, $unite: px, $important: false) {
+    $priorite: null;
+    @if $important {
+        $priorite: !important;
+    }
+    
     @if $width {
-        width: $width $unite;
+        width: $widt#{$unite} #{$priorite};
     }
     @if $height {
-        height: $height $unite;
+        height: $height#{$unite} #{$priorite};
+    }
+}
+
+/// Mixin de typographie
+/// @param {number} $fontname [null] - Le nom de la police d'écriture
+/// @param {number} $fontSize [null] - La taille de la police d'écriture
+/// @param {mixed} $unit [rem] - Une unitée de mesure compatible
+/// @param {mixed} $color [null] - La couleur de la police d'écriture
+/// @example 
+///     typographie('Arial', 1.6, rem, #C1C1C1);
+/// @outputs Définit la police, sa taille (dans une unité donnée) ainsi que sa couleur (font-family, font-size, color)
+@mixin typographie($fontName: null, $fontSize: null, $unit: rem, $color: null) {
+    @if $fontName {
+        font-family: $fontName;
+    }
+    @if ($fontSize & $unit) {
+        font-size: $fontSize#{$unit};
+    }
+    @if $color {
+        color: $color;
     }
 }

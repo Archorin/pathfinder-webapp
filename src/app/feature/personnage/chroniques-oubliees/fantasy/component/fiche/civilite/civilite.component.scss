@@ -1,19 +1,9 @@
+@import '../_scss/_main.scss';
+
 .civilite {
-    height: 120px;
+    @include sizing(null, 45, mm, true);
 }
-.ligne-1 {
-    height: 35px;
-    margin-bottom: 15px;
-}
-.ligne-2 {
-    height: 35px;
-}
-.ligne-3 {
-    height: 35px;
-}
-.gutters {
-    padding: 0 15px 0 15px;
-}
-.underline {
-    border-bottom: 1px solid;
+
+.ligne {
+    @include sizing(null, 35, px, true);
 }

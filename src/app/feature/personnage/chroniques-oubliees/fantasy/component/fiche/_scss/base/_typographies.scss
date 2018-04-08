@@ -2,9 +2,6 @@
 .medieval-font {
   font-family: 'Black family';
 }
-.medieval-font-light {
-  font-family: 'OldLondon';
-}
 .manuscrit-font {
   font-family: 'DJB My Boyfriends Handwriting';
 }
@@ -12,33 +9,10 @@
   font-family: 'Wishing Well';
 }
 
-.medieval-title {
-  @extend .medieval-font-light;
-  font-size: 2.8rem;
-  color: $couleurPrincipale;
-}
 
+.medieval-title {
+  @include typographie('OldLondon', 2.8, rem, $couleurPrincipale);
+}
 .medieval-subtitle {
-  @extend .medieval-font-light;
-  font-size: 1.6rem;
-  color: $couleurPrincipale;
+  @include typographie('OldLondon', 1.6, rem, $couleurPrincipale);
 }
-/*
-.medieval-title-block {
-  @extend .medieval-font;
-  font-size: 8mm;
-  background: $couleurPrincipale;
-  padding: 1mm;
-  margin: 0mm;
-  color: $color-scroll;
-}
-.manuscrit-text {
-  @extend .manuscrit-font;
-  font-size: 3.8mm;
-  color: $color-handwritting;
-}
-.regular-text {
-  @extend .regular-font;
-  font-size: 3mm;
-  color: $color-text;
-}*/

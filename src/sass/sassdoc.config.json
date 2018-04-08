@@ -1,7 +1,7 @@
 {
     "dest": "./sassdoc",
     "exclude": [],
-    "package": "../../../../../../../../../package.json",
+    "package": "../../package.json",
     "theme": "default",
     "autofill": [
         "requires",
