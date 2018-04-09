@@ -1,12 +1,8 @@
-.bloc-top {
-    margin-top: 55px;
-}
 .bloc {
     color: $couleurPrincipale;
 
     .titre {
-        font-weight: 600;
-        font-size: 0.9rem;
-        text-align: center;
+        $params: ( 'font-size': 0.9, 'font-weight': 600);
+        @include typographie($params);
     }
 }

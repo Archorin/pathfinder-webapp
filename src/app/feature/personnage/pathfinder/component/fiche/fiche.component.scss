@@ -27,9 +27,9 @@ div[size="A4"] {
 }
 @font-face {
     font-family: 'pathfinderFiche';
-    src: url('sass/font/oldsh.ttf') format("truetype"),
-        url('sass/font/oldsih.ttf') format("truetype"),
-        url('sass/font/oldssch.ttf') format("truetype");
+    src: url('/sass/font/oldsh.ttf') format("truetype"),
+        url('/sass/font/oldsih.ttf') format("truetype"),
+        url('/sass/font/oldssch.ttf') format("truetype");
 }
 .fiche-pathfinder /deep/{
     font-family: 'pathfinderFiche';

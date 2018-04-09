@@ -1,22 +1,30 @@
 @import '../../_scss/_main.scss';
-.bloc {
+
+.voie {
     margin-top: 0.8rem;
+    //height: 130mm;
+
     .titre-voie {
         background-color: $couleurPrincipale;
-        color: white;
-        border: none;
-        text-align: center;
-        font-weight: 600;
-        line-height: 2.5rem;
+        $params: (
+            'unite': rem,
+            'color': white,
+            'line-height': 2.5,
+            'font-weight': 600
+        );
+        @include typographie($params);
     }
+    /*
+    * Mise en page du tableau des profils / voies
+    */
     .column-number {
         width: 25px;
     }
     .center-number {
-        line-height: 10rem;
+        line-height: 35mm;
     }
     .row-voie {
-        height: 10rem;
+        height: 35mm;
         line-height: 1rem;
     }
     .col {

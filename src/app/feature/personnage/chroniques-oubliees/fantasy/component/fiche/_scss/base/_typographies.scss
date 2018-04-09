@@ -1,5 +1,5 @@
 /* Blocks titles, chapters and pagination */
-.medieval-font {
+/*.medieval-font {
   font-family: 'Black family';
 }
 .manuscrit-font {
@@ -7,12 +7,22 @@
 }
 .regular-font {
   font-family: 'Wishing Well';
-}
+}*/
 
 
 .medieval-title {
-  @include typographie('OldLondon', 2.8, rem, $couleurPrincipale);
+  $params: (
+    'font-family': 'OldLondon',
+    'font-size': 2.8,
+    'unite': rem,
+  );
+  @include typographie($params);
 }
 .medieval-subtitle {
-  @include typographie('OldLondon', 1.6, rem, $couleurPrincipale);
+  $params: (
+    'font-family': 'OldLondon',
+    'font-size': 1.6,
+    'unite': rem,
+  );
+  @include typographie($params);
 }

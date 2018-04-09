@@ -1,6 +1,8 @@
 @import '../_scss/_main.scss';
 .bloc {
     margin-top: 0.8rem;
+
+
     .titre {
         background-color: $couleurPrincipale;
         color: white;
@@ -13,6 +15,6 @@
         border-right: 1px solid #6a3d24;
         border-bottom: 1px solid #6a3d24;
         border-left: 1px solid #6a3d24;
-        height: 151mm;
+        height: 140mm;
     }
 }

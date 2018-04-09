@@ -1,20 +1,20 @@
 .container-fluid {
-    margin-top: 20px;
+    //margin-top: 20px;
     line-height: 1;
 }
-/*
-div[size="A4"] {
-    max-width: 210mm;
-    max-height: 297mm;
-}
 
+div[size="A4"] {
+//    height: 297mm;
+//    width: 210mm;
+}
+/*
 @page {
-    size: A4;
+    size: A4 portrait;
     margin: 0;
 }
 */
 @media print {
-    div[size="A4"] {
+    /*div[size="A4"] {
         page-break-after: always;
     }
     html,
@@ -22,10 +22,14 @@ div[size="A4"] {
         width: 210mm;
         height: 297mm;
     }
+    div[size="A4"] {
+        height: 297mm;
+        width: 210mm;
+    }
     .container-fluid {
         padding-right: 0px !important;
         padding-left: 0px !important;
-    }
+    }*/
     /* ... the rest of the rules ... */
 }
 

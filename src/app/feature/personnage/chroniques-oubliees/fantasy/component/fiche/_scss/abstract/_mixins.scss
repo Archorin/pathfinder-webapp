@@ -27,21 +27,83 @@
 }
 
 /// Mixin de typographie
-/// @param {number} $fontname [null] - Le nom de la police d'écriture
-/// @param {number} $fontSize [null] - La taille de la police d'écriture
-/// @param {mixed} $unit [rem] - Une unitée de mesure compatible
-/// @param {mixed} $color [null] - La couleur de la police d'écriture
+/// @param {map} $params [null] - Un map contenant l'ensemble des paramètres souhaités
+///
+/// @param {string} $params.font-family [null] - Nom de la police d'écriture
+/// @param {boolean} $params.ff-important [false] - !important sur font-family
+/// @param {number} $params.font-size [null] - La taille de la police d'écriture
+/// @param {boolean} $params.fs-important [false] - !important sur font-size
+/// @param {mixed} $params.unite [rem] - Une unitée de mesure compatible
+/// @param {color} $params.color [null] - La couleur de la police d'écriture
+/// @param {boolean} $params.c-important [false] - !important sur color
+/// @param {number} $params.line-height [null] - La hauteur de la ligne
+/// @param {boolean} $params.lh-important [false] - !important sur line-height
+/// @param {number} $params.font-weight [null] - L'épaisseur du trait
+/// @param {boolean} $params.lw-important [false] - !important sur font-weight
+///
 /// @example 
-///     typographie('Arial', 1.6, rem, #C1C1C1);
-/// @outputs Définit la police, sa taille (dans une unité donnée) ainsi que sa couleur (font-family, font-size, color)
-@mixin typographie($fontName: null, $fontSize: null, $unit: rem, $color: null) {
-    @if $fontName {
-        font-family: $fontName;
+///     $params: (
+///         'font-family': null,
+///         'ff-important': false,
+///         'font-size': null,
+///         'fs-important': false,
+///         'unite': rem,
+///         'color': null,
+///         'c-important': false,
+///         'line-height': null,
+///         'lh-important': false,
+///         'font-weight': null,
+///         'fw-important': false
+///     );
+///     typographie($params);
+///
+/// @outputs Définit l'ensemble des informations nécéssaire à la police d'écriture
+@mixin typographie($params) {
+    // Pré-traitement sur l'unité de mesure ainsi que le paramètre !important
+    $ff-important: null;
+    @if (map-has-key($params, 'ff-important') & map-get($params, 'ff-important')) {
+        $ff-important: !important;
     }
-    @if ($fontSize & $unit) {
-        font-size: $fontSize#{$unit};
+    $fs-important: null;
+    @if (map-has-key($params, 'fs-important') & map-get($params, 'fs-important')) {
+        $fs-important: !important;
     }
-    @if $color {
-        color: $color;
+    $c-important: null;
+    @if (map-has-key($params, 'c-important') & map-get($params, 'c-important')) {
+        $c-important: !important;
+    }
+    $lh-important: null;
+    @if (map-has-key($params, 'lh-important') & map-get($params, 'lh-important')) {
+        $lh-important: !important;
+    }
+    $fw-important: null;
+    @if (map-has-key($params, 'fw-important') & map-get($params, 'fw-important')) {
+        $fw-important: !important;
+    }
+    // Unité
+    $unite: rem;
+    @if (map-has-key($params, 'unite') & map-get($params, 'unite')) {
+        $unite: map-get($params, 'unite');
+    }
+
+    // Choix de la police
+    @if (map-has-key($params, 'font-family') & map-get($params, 'font-family')) {
+        font-family: #{map-get($params, 'font-family')} #{$ff-important};
+    }
+    // Choix de la taille de la police
+    @if (map-has-key($params, 'font-size') & map-get($params, 'font-size')) {
+        font-size: #{map-get($params, 'font-size')}#{$unite} #{$fs-important};
+    }
+    // Choix de la couleur de la police
+    @if (map-has-key($params, 'color') & map-get($params, 'color')) {
+        color: #{map-get($params, 'color')} #{$c-important};
+    }
+    // Choix de la hauteur de ligne
+    @if (map-has-key($params, 'line-height') & map-get($params, 'line-height')) {
+        line-height: #{map-get($params, 'line-height')} #{$lh-important};
+    }
+    // Choix du gras de la police
+    @if (map-has-key($params, 'font-weight') & map-get($params, 'font-weight')) {
+        font-weight: #{map-get($params, 'font-weight')} #{$fw-important};
     }
 }
