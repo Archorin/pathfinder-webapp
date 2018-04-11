@@ -4,24 +4,35 @@
     <div class="col-8"></div>
   </div>
   <div class="row no-gutters">
+    <ng-template #dvEtPvDefinitionTemplate>
+      <popover-fiche-cof i18n-message message="Tous les personnages possèdent des Points de vie (PV). Ce nombre représente leur capacité à encaisser les dommages et les blessures.
+
+          Au niveau 1, le nombre de PV de votre personnage est égal au résultat maximum du Dé de vie de son Profil, auquel on ajoute son Mod. de CON. Parfois, une Capacité peut venir modifier ce score.
+          
+          Exemple : Krush le Guerrier Demi-orque possède une CON de 16/+3 et son Profil de Guerrier indique que le Dé de vie utilisé est le d10. Il obtient donc au premier niveau 13 PV (10 pour le d10 plus 3 pour le Mod. de CON). Toutefois, Krush possède la Capacité de rang 1 de la Voie de la résistance, nommée Robustesse, qui lui permet d’ajouter +3 PV. Son score final de PV est donc de 16 !"></popover-fiche-cof>
+    </ng-template>
     <div class="col-5">
-      <shared-graphique-chronique-oubliees-case [body]="'DV'" [footer]="'DÉ DE VIE'" [classe]="'negative-marron'"></shared-graphique-chronique-oubliees-case>
+      <shared-graphique-chronique-oubliees-case [popoverFiche]="dvEtPvDefinitionTemplate" i18n-popoverTitle popoverTitle="Dés de vie et Points de vie"
+        [body]="'DV'" [footer]="'DÉ DE VIE'" [classe]="'negative-marron'"></shared-graphique-chronique-oubliees-case>
     </div>
-    <div class="col-7">
-      <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="'D8'"></shared-graphique-chronique-oubliees-case>
+    <div class="col-7 text-dark">
+      <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="personnage.DV || '-'"></shared-graphique-chronique-oubliees-case>
     </div>
   </div>
   <div class="row no-gutters">
     <div class="col-5">
-      <shared-graphique-chronique-oubliees-case [body]="'PV'" [footer]="'POINTS DE VIE'" [classe]="'negative-marron'"></shared-graphique-chronique-oubliees-case>
+      <shared-graphique-chronique-oubliees-case [popoverFiche]="dvEtPvDefinitionTemplate" i18n-popoverTitle popoverTitle="Dés de vie et Points de vie"
+        [body]="'PV'" [footer]="'POINTS DE VIE'" [classe]="'negative-marron'"></shared-graphique-chronique-oubliees-case>
     </div>
-    <div class="col-7">
-      <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="'41'"></shared-graphique-chronique-oubliees-case>
+    <div class="col-7 text-dark">
+      <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="personnage.PVmax || '-'"></shared-graphique-chronique-oubliees-case>
     </div>
   </div>
   <div class="row no-gutters">
     <div class="col-12">
-      <shared-graphique-chronique-oubliees-case [header]="'Points de vie restants:'" [body]="'32'" [footer]="'DM temporaires:'" [classe]="'large-double'"></shared-graphique-chronique-oubliees-case>
+      <shared-graphique-chronique-oubliees-case [header]="'Points de vie restants:'" [body]="personnage.PVactuel || '-'" [footer]="'DM temporaires:'"
+        [classe]="'large-double'">
+      </shared-graphique-chronique-oubliees-case>
     </div>
   </div>
 </div>

@@ -1,64 +1,106 @@
 <div class="bloc combat">
-  <div class="row no-gutters">
-    <div class="col-5 titre text-left">COMBAT</div>
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col titre text-center">Total</div>
-  </div>
-  <div class="row no-gutters">
-    <div class="col-5">
-        <shared-graphique-chronique-oubliees-case [body]="'INITIATIVE'" [classe]="'negative-marron basique'"></shared-graphique-chronique-oubliees-case>
+    <div class="row no-gutters">
+        <div class="col-5 titre text-left">COMBAT</div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col titre text-center">Total</div>
     </div>
-    <div class="col">
-        <shared-graphique-chronique-oubliees-case [bodyFiligrane]="'DEX'" [content]="'12'" [classe]="'basique'"></shared-graphique-chronique-oubliees-case>
+    <!-- Initiative -->
+    <div class="row no-gutters">
+        <div class="col-5">
+            <ng-template #initiativeDefinitionTemplate>
+                <popover-fiche-cof i18n-message message="L’Initiative (Init.) d’un personnage représente sa vitesse de réaction et sert principalement à déterminer l’ordre d’action des différents protagonistes lors d’un combat. Au départ, le score d’Initiative est égal à la valeur de DEX du personnage, mais il peut ensuite évoluer différemment, ce score est donc noté à part.
+
+                Exemple : l’initiative de Krush est normalement égale à 11 (son score de DEX). Toutefois, sa capacité Vivacité (rang 1 de la Voie du combat) augmente ce score de +3. Son Init. est donc égale à 14."></popover-fiche-cof>
+            </ng-template>
+            <shared-graphique-chronique-oubliees-case [popoverFiche]="initiativeDefinitionTemplate" i18n-popoverTitle popoverTitle="Initiative"
+                [body]="'INITIATIVE'" [classe]="'negative-marron basique'">
+            </shared-graphique-chronique-oubliees-case>
+        </div>
+        <div class="col text-dark">
+            <shared-graphique-chronique-oubliees-case [bodyFiligrane]="caracteristique.dexterite | placeholderFiligrane: 'DEX'" [content]="caracteristique.dexterite || '&nbsp;'"
+                [classe]="'basique'">
+            </shared-graphique-chronique-oubliees-case>
+        </div>
+        <div class="col text-dark">
+            <shared-graphique-chronique-oubliees-case [content]="'-'" [classe]="'basique'"></shared-graphique-chronique-oubliees-case>
+        </div>
+        <div class="col text-dark">
+            <shared-graphique-chronique-oubliees-case [content]="(caracteristique.dexterite | alterationSigne) || '&nbsp;'" [classe]="'basique'"></shared-graphique-chronique-oubliees-case>
+        </div>
     </div>
-    <div class="col">
-        <shared-graphique-chronique-oubliees-case [content]="'12'" [classe]="'basique'"></shared-graphique-chronique-oubliees-case>
+    <!-- Attaque -->
+    <div class="row no-gutters">
+        <div class="col-5">
+            <ng-template #attaqueAuContactDefinitionTemplate>
+                <popover-fiche-cof i18n-message message="Le score d’attaque d’un personnage est égal au Niveau du personnage auquel s’ajoute le Mod. de FOR.
+                Exemple : Krush est un personnage de niveau 1. Son score d’Attaque au contact est donc de +4 (FOR +3)."></popover-fiche-cof>
+            </ng-template>
+            <shared-graphique-chronique-oubliees-case [popoverFiche]="attaqueAuContactDefinitionTemplate" i18n-popoverTitle popoverTitle="Attaque au contact"
+                [header]="'ATTAQUE'" [body]="'AU CONTACT'" [classe]="'negative-marron'"></shared-graphique-chronique-oubliees-case>
+        </div>
+        <div class="col text-dark">
+            <shared-graphique-chronique-oubliees-case [bodyFiligrane]="caracteristique.force | placeholderFiligrane: 'FOR'" [classe]="'basique'"
+                [content]="(caracteristique.force | alterationCaracteristique: true) || '&nbsp;'">
+            </shared-graphique-chronique-oubliees-case>
+        </div>
+        <div class="col text-dark">
+            <shared-graphique-chronique-oubliees-case [bodyFiligrane]="personnage.niveau | placeholderFiligrane: 'NIV'" [classe]="'basique'"
+                [content]="personnage.niveau || '&nbsp;'">
+            </shared-graphique-chronique-oubliees-case>
+        </div>
+        <div class="col text-dark">
+            <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="(caracteristique.force | alterationCaracteristique: true) + personnage.niveau | alterationSigne">
+            </shared-graphique-chronique-oubliees-case>
+        </div>
     </div>
-    <div class="col">
-        <shared-graphique-chronique-oubliees-case [content]="'12'" [classe]="'basique'"></shared-graphique-chronique-oubliees-case>
+    <!-- Distance -->
+    <div class="row no-gutters">
+        <div class="col-5">
+            <ng-template #attaqueADistanceDefinitionTemplate>
+                <popover-fiche-cof i18n-message message="Le score d’attaque d’un personnage est égal au Niveau du personnage auquel s’ajoute le Mod. de DEX.
+                        Exemple : Krush est un personnage de niveau 1. Son score d’Attaque à distance de +1 (DEX +0)."></popover-fiche-cof>
+            </ng-template>
+            <shared-graphique-chronique-oubliees-case [popoverFiche]="attaqueADistanceDefinitionTemplate" i18n-popoverTitle popoverTitle="Attaque à distance"
+                [header]="'ATTAQUE'" [body]="'À DISTANCE'" [classe]="'negative-marron'"></shared-graphique-chronique-oubliees-case>
+        </div>
+        <div class="col text-dark">
+            <shared-graphique-chronique-oubliees-case [bodyFiligrane]="caracteristique.dexterite | placeholderFiligrane: 'DEX'" [classe]="'basique'"
+                [content]="(caracteristique.dexterite | alterationCaracteristique: true) || '&nbsp;'">
+            </shared-graphique-chronique-oubliees-case>
+        </div>
+        <div class="col text-dark">
+            <shared-graphique-chronique-oubliees-case [bodyFiligrane]="personnage.niveau | placeholderFiligrane: 'NIV'" [classe]="'basique'"
+                [content]="personnage.niveau || '&nbsp;'">
+            </shared-graphique-chronique-oubliees-case>
+        </div>
+        <div class="col text-dark">
+            <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="(caracteristique.dexterite | alterationCaracteristique: true) + personnage.niveau | alterationSigne">
+            </shared-graphique-chronique-oubliees-case>
+        </div>
     </div>
-  </div>
-  <div class="row no-gutters">
-      <div class="col-5">
-          <shared-graphique-chronique-oubliees-case [header]="'ATTAQUE'" [body]="'AU CONTACT'" [classe]="'negative-marron'"></shared-graphique-chronique-oubliees-case>
-      </div>
-      <div class="col">
-          <shared-graphique-chronique-oubliees-case [bodyFiligrane]="'FOR'" [classe]="'basique'" [content]="'12'"></shared-graphique-chronique-oubliees-case>
-      </div>
-      <div class="col">
-          <shared-graphique-chronique-oubliees-case [bodyFiligrane]="'NIV'" [classe]="'basique'" [content]="'12'"></shared-graphique-chronique-oubliees-case>
-      </div>
-      <div class="col">
-          <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="'12'"></shared-graphique-chronique-oubliees-case>
-      </div>
-  </div>
-  <div class="row no-gutters">
-      <div class="col-5">
-          <shared-graphique-chronique-oubliees-case [header]="'ATTAQUE'" [body]="'À DISTANCE'" [classe]="'negative-marron'"></shared-graphique-chronique-oubliees-case>
-      </div>
-      <div class="col">
-          <shared-graphique-chronique-oubliees-case [bodyFiligrane]="'DEX'" [classe]="'basique'" [content]="'12'"></shared-graphique-chronique-oubliees-case>
-      </div>
-      <div class="col">
-          <shared-graphique-chronique-oubliees-case [bodyFiligrane]="'NIV'" [classe]="'basique'" [content]="'12'"></shared-graphique-chronique-oubliees-case>
-      </div>
-      <div class="col">
-          <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="'12'"></shared-graphique-chronique-oubliees-case>
-      </div>
-  </div>
-  <div class="row no-gutters">
-      <div class="col-5">
-          <shared-graphique-chronique-oubliees-case [header]="'ATTAQUE'" [body]="'MAGIQUE'" [classe]="'negative-marron'"></shared-graphique-chronique-oubliees-case>
-      </div>
-      <div class="col">
-          <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="'12'"></shared-graphique-chronique-oubliees-case>
-      </div>
-      <div class="col">
-          <shared-graphique-chronique-oubliees-case [bodyFiligrane]="'NIV'" [classe]="'basique'" [content]="'12'"></shared-graphique-chronique-oubliees-case>
-      </div>
-      <div class="col">
-          <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="'12'"></shared-graphique-chronique-oubliees-case>
-      </div>
-  </div>
+    <!-- Magie -->
+    <div class="row no-gutters">
+        <div class="col-5">
+            <ng-template #attaqueMagiqueDefinitionTemplate>
+                <popover-fiche-cof i18n-message message="Le score d’attaque d’un personnage est égal au Niveau du personnage auquel s’ajoute le Mod. d’INT pour les attaques magiques par défaut. Toutefois de nombreux Profils d’utilisateur de magie emploient un autre Mod. de Carac. pour refléter une magie différente qui ne fait pas appel à l’intellect du personnage.
+                    N’utilisant pas la magie, il n’a normalement pas usage du score d’Attaque magique. Toutefois ce score pourra parfois être utilisé pour résister à un sort, il est donc égal à +0 (INT -1 et niveau +1)."></popover-fiche-cof>
+            </ng-template>
+            <shared-graphique-chronique-oubliees-case 
+                [popoverFiche]="attaqueMagiqueDefinitionTemplate" i18n-popoverTitle popoverTitle="Attaque magique"
+                [header]="'ATTAQUE'" [body]="'MAGIQUE'" [classe]="'negative-marron'"></shared-graphique-chronique-oubliees-case>
+        </div>
+        <div class="col text-dark">
+            <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="'-'"></shared-graphique-chronique-oubliees-case>
+        </div>
+        <div class="col text-dark">
+            <shared-graphique-chronique-oubliees-case [bodyFiligrane]="personnage.niveau | placeholderFiligrane: 'NIV'" [classe]="'basique'"
+                [content]="personnage.niveau || '&nbsp;'">
+            </shared-graphique-chronique-oubliees-case>
+        </div>
+        <div class="col text-dark">
+            <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="personnage.niveau | alterationSigne">
+            </shared-graphique-chronique-oubliees-case>
+        </div>
+    </div>
 </div>

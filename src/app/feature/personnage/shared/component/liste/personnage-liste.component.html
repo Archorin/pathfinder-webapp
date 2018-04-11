@@ -15,7 +15,7 @@
         <td>{{personnage.nom}}</td>
         <td>{{personnage.univers}}</td>
         <td><a routerLink="/personnage/{{personnage.univers | lowercase}}/{{personnage.id}}">
-          <i class="fa fa-pencil-square-o"></i>
+          <picto [libelle]="'edition-pencil'"></picto>
         </a></td>
       </tr>
     </tbody>

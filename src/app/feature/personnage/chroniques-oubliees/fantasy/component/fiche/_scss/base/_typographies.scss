@@ -26,3 +26,13 @@
   );
   @include typographie($params);
 }
+.medieval-content {
+  $params: (
+    'font-family': 'OldLondon',
+    'font-size': 1.5,
+    'font-weight': 400,
+    'unite': rem,
+    'color': black
+  );
+  @include typographie($params);
+}

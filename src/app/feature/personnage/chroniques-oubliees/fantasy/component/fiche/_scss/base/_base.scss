@@ -1,6 +1,5 @@
 .bloc {
     color: $couleurPrincipale;
-
     .titre {
         $params: ( 'font-size': 0.9, 'font-weight': 600);
         @include typographie($params);

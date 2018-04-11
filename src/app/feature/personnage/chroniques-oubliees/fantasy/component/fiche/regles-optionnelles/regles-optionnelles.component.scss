@@ -6,9 +6,6 @@ $grisEfface: #e8e1dd;
 .bloc {
     margin-top: 0.8rem;
 
-    .decalage-bloc {
-        padding-right: 10px !important;
-    }
     .champ-libre {
         border: 1px solid #6a3d24;
         height: 100px;
@@ -16,7 +13,7 @@ $grisEfface: #e8e1dd;
     }
     .option-label {
         div {
-            line-height: 3.5rem;
+            line-height: 1.5rem;
         }
         .gris {
             color: $grisEfface;

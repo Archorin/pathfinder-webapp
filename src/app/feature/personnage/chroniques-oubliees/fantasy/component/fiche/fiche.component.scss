@@ -3,10 +3,10 @@
     line-height: 1;
 }
 
-div[size="A4"] {
+// div[size="A4"] {
 //    height: 297mm;
 //    width: 210mm;
-}
+// }
 /*
 @page {
     size: A4 portrait;
@@ -31,8 +31,4 @@ div[size="A4"] {
         padding-left: 0px !important;
     }*/
     /* ... the rest of the rules ... */
-}
-
-.decalage-bloc {
-    padding-right: 12px;
 }

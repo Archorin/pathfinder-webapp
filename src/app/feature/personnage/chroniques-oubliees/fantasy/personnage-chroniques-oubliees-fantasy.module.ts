@@ -11,7 +11,7 @@ import { VitaliteComponent } from './component/fiche/vitalite/vitalite.component
 import { DefenseComponent } from './component/fiche/defense/defense.component';
 import { ArmeComponent } from './component/fiche/arme/arme.component';
 import { CapaciteRacialeComponent } from './component/fiche/capacite-raciale/capacite-raciale.component';
-import { SharedModule } from '../../../../shared/shared.module';
+import { SharedModule } from 'app/shared/shared.module';
 import { PremierSegmentComponent } from './component/fiche/voie/premier-segment/premier-segment.component';
 import { SecondSegmentComponent } from './component/fiche/voie/second-segment/second-segment.component';
 import { HistoriqueCaractereComponent } from './component/fiche/historique-caractere/historique-caractere.component';

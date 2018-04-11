@@ -1,7 +1,7 @@
 <div class="bloc caracteristique">
     <!-- Titres -->
     <div class="row no-gutters titre text-center">
-        <div class="col">
+        <div class="col text-left">
             CARAC.
         </div>
         <div class="col">
@@ -15,85 +15,120 @@
     <!-- Lignes et Colonnes -->
     <div class="row no-gutters">
         <div class="col">
-            <shared-graphique-chronique-oubliees-case [body]="'FOR'" [footer]="'Force'" [classe]="'negative-marron'"></shared-graphique-chronique-oubliees-case>
+            <ng-template #forceDefinitionTemplate>
+                <popover-fiche-cof i18n-message message="La Force (FOR) mesure la puissance physique et musculaire.
+                Gagner un bras de fer, soulever, tordre, lancer un objet lourd, immobiliser un adversaire. Attaquer au contact."></popover-fiche-cof>
+            </ng-template>
+            <shared-graphique-chronique-oubliees-case [popoverFiche]="forceDefinitionTemplate" i18n-popoverTitle popoverTitle="Force"
+                [body]="'FOR'" [footer]="'Force'" [classe]="'negative-marron'">
+            </shared-graphique-chronique-oubliees-case>
         </div>
-        <div class="col">
-            <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="'12'"></shared-graphique-chronique-oubliees-case>
+        <div class="col text-dark">
+            <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="caracteristique.force"></shared-graphique-chronique-oubliees-case>
         </div>
-        <div class="col">
-            <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="'+1'"></shared-graphique-chronique-oubliees-case>
+        <div class="col text-dark">
+            <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="caracteristique.force | alterationCaracteristique"></shared-graphique-chronique-oubliees-case>
         </div>
-        <div class="col">
+        <div class="col text-dark">
             <shared-graphique-chronique-oubliees-case [classe]="'basique-bord-gris'" [content]="'&nbsp;'"></shared-graphique-chronique-oubliees-case>
         </div>
     </div>
     <div class="row no-gutters">
         <div class="col">
-            <shared-graphique-chronique-oubliees-case [body]="'DEX'" [footer]="'Dextérité'" [classe]="'negative-marron'"></shared-graphique-chronique-oubliees-case>
+            <ng-template #dexteriteDefinitionTemplate>
+                <popover-fiche-cof i18n-message message="La Dextérité (DEX) évalue l’agilité, les réflexes et l’adresse.
+                Faire des acrobaties, tenir en équilibre, grimper, sauter, sprinter, se déplacer en silence, crocheter, chaparder, esquiver une attaque. Attaquer à distance."></popover-fiche-cof>
+            </ng-template>
+            <shared-graphique-chronique-oubliees-case [popoverFiche]="dexteriteDefinitionTemplate" i18n-popoverTitle popoverTitle="Dextérité"
+                [body]="'DEX'" [footer]="'Dextérité'" [classe]="'negative-marron'">
+            </shared-graphique-chronique-oubliees-case>
         </div>
-        <div class="col">
-            <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="'14'"></shared-graphique-chronique-oubliees-case>
+        <div class="col text-dark">
+            <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="caracteristique.dexterite"></shared-graphique-chronique-oubliees-case>
         </div>
-        <div class="col">
-            <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="'+2'"></shared-graphique-chronique-oubliees-case>
+        <div class="col text-dark">
+            <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="caracteristique.dexterite | alterationCaracteristique"></shared-graphique-chronique-oubliees-case>
         </div>
-        <div class="col">
+        <div class="col text-dark">
             <shared-graphique-chronique-oubliees-case [classe]="'basique-bord-gris'" [content]="'&nbsp;'"></shared-graphique-chronique-oubliees-case>
         </div>
     </div>
     <div class="row no-gutters">
         <div class="col">
-            <shared-graphique-chronique-oubliees-case [body]="'CON'" [footer]="'Constitution'" [classe]="'negative-marron'"></shared-graphique-chronique-oubliees-case>
+            <ng-template #constitutionDefinitionTemplate>
+                <popover-fiche-cof i18n-message message="La Constitution (CON) représente la santé et l’endurance.
+                Résister aux éléments, à la fatigue, aux poisons, aux privations, courir longtemps. Encaisser des blessures."></popover-fiche-cof>
+            </ng-template>
+            <shared-graphique-chronique-oubliees-case [popoverFiche]="constitutionDefinitionTemplate" i18n-popoverTitle popoverTitle="Constitution"
+                [body]="'CON'" [footer]="'Constitution'" [classe]="'negative-marron'">
+            </shared-graphique-chronique-oubliees-case>
         </div>
-        <div class="col">
-            <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="'10'"></shared-graphique-chronique-oubliees-case>
+        <div class="col text-dark">
+            <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="caracteristique.constitution"></shared-graphique-chronique-oubliees-case>
         </div>
-        <div class="col">
-            <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="'+0'"></shared-graphique-chronique-oubliees-case>
+        <div class="col text-dark">
+            <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="caracteristique.constitution | alterationCaracteristique"></shared-graphique-chronique-oubliees-case>
         </div>
-        <div class="col">
+        <div class="col text-dark">
             <shared-graphique-chronique-oubliees-case [classe]="'basique-bord-gris'" [content]="'&nbsp;'"></shared-graphique-chronique-oubliees-case>
         </div>
     </div>
     <div class="row no-gutters">
         <div class="col">
-            <shared-graphique-chronique-oubliees-case [body]="'INT'" [footer]="'Intelligence'" [classe]="'negative-marron'"></shared-graphique-chronique-oubliees-case>
+            <ng-template #intelligenceDefinitionTemplate>
+                <popover-fiche-cof i18n-message message="L’Intelligence (INT) représente les capacités d’apprentissage et de raisonnement.
+                Raisonner, comprendre, connaître, apprendre, se souvenir, chercher, trouver une information (livre). Attaquer par magie."></popover-fiche-cof>
+            </ng-template>
+            <shared-graphique-chronique-oubliees-case [popoverFiche]="intelligenceDefinitionTemplate" i18n-popoverTitle popoverTitle="Intelligence"
+                [body]="'INT'" [footer]="'Intelligence'" [classe]="'negative-marron'">
+            </shared-graphique-chronique-oubliees-case>
         </div>
-        <div class="col">
-            <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="'18'"></shared-graphique-chronique-oubliees-case>
+        <div class="col text-dark">
+            <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="caracteristique.intelligence"></shared-graphique-chronique-oubliees-case>
         </div>
-        <div class="col">
-            <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="'+4'"></shared-graphique-chronique-oubliees-case>
+        <div class="col text-dark">
+            <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="caracteristique.intelligence | alterationCaracteristique"></shared-graphique-chronique-oubliees-case>
         </div>
-        <div class="col">
+        <div class="col text-dark">
             <shared-graphique-chronique-oubliees-case [classe]="'basique-bord-gris'" [content]="'&nbsp;'"></shared-graphique-chronique-oubliees-case>
         </div>
     </div>
     <div class="row no-gutters">
         <div class="col">
-            <shared-graphique-chronique-oubliees-case [body]="'SAG'" [footer]="'Sagesse'" [classe]="'negative-marron'"></shared-graphique-chronique-oubliees-case>
+            <ng-template #sagesseDefinitionTemplate>
+                <popover-fiche-cof i18n-message message="L’Intelligence (INT) représente les capacités d’apprentissage et de raisonnement.
+                        Raisonner, comprendre, connaître, apprendre, se souvenir, chercher, trouver une information (livre). Attaquer par magie."></popover-fiche-cof>
+            </ng-template>
+            <shared-graphique-chronique-oubliees-case [popoverFiche]="sagesseDefinitionTemplate" i18n-popoverTitle popoverTitle="Sagesse"
+                [body]="'SAG'" [footer]="'Sagesse'" [classe]="'negative-marron'">
+            </shared-graphique-chronique-oubliees-case>
         </div>
-        <div class="col">
-            <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="'8'"></shared-graphique-chronique-oubliees-case>
+        <div class="col text-dark">
+            <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="caracteristique.sagesse"></shared-graphique-chronique-oubliees-case>
         </div>
-        <div class="col">
-            <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="'-1'"></shared-graphique-chronique-oubliees-case>
+        <div class="col text-dark">
+            <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="caracteristique.sagesse | alterationCaracteristique"></shared-graphique-chronique-oubliees-case>
         </div>
-        <div class="col">
+        <div class="col text-dark">
             <shared-graphique-chronique-oubliees-case [classe]="'basique-bord-gris'" [content]="'&nbsp;'"></shared-graphique-chronique-oubliees-case>
         </div>
     </div>
     <div class="row no-gutters">
         <div class="col">
-            <shared-graphique-chronique-oubliees-case [body]="'CHA'" [footer]="'Charisme'" [classe]="'negative-marron'"></shared-graphique-chronique-oubliees-case>
+            <ng-template #charismeDefinitionTemplate>
+                <popover-fiche-cof i18n-message message="Le Charisme (CHA) traduit la force de persuasion, la présence et la capacité à commander.
+                    Bluffer, mentir, négocier, séduire, intimider, convaincre."></popover-fiche-cof>
+            </ng-template>
+            <shared-graphique-chronique-oubliees-case [popoverFiche]="charismeDefinitionTemplate" i18n-popoverTitle popoverTitle="Charisme"
+                [body]="'CHA'" [footer]="'Charisme'" [classe]="'negative-marron'"></shared-graphique-chronique-oubliees-case>
         </div>
-        <div class="col">
-            <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="'6'"></shared-graphique-chronique-oubliees-case>
+        <div class="col text-dark">
+            <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="caracteristique.charisme"></shared-graphique-chronique-oubliees-case>
         </div>
-        <div class="col">
-            <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="'-2'"></shared-graphique-chronique-oubliees-case>
+        <div class="col text-dark">
+            <shared-graphique-chronique-oubliees-case [classe]="'basique'" [content]="caracteristique.charisme | alterationCaracteristique"></shared-graphique-chronique-oubliees-case>
         </div>
-        <div class="col">
+        <div class="col text-dark">
             <shared-graphique-chronique-oubliees-case [classe]="'basique-bord-gris'" [content]="'&nbsp;'"></shared-graphique-chronique-oubliees-case>
         </div>
     </div>

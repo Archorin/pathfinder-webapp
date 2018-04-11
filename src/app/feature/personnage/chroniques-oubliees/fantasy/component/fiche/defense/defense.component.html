@@ -6,7 +6,15 @@
   </div>
   <div class="row no-gutters">
     <div class="col-md-auto">
-      <shared-graphique-chronique-oubliees-case [body]="'DEF'" [footer]="'DÉFENSE'" [classe]="'negative-marron'"></shared-graphique-chronique-oubliees-case>
+        <ng-template #defenseDefinitionTemplate>
+            <popover-fiche-cof i18n-message message="La Défense (DEF) d’un personnage représente sa capacité à esquiver et/ou à dévier les coups qui lui sont portés. La DEF de votre personnage est égale à 10 + Mod. de DEX + éventuels Modificateurs de capacités et d’armure (voir Équipement).
+
+            Exemple : Krush porte une cotte de mailles (+5 à la DEF) et son modificateur de DEX est de +0. Sa DEF est donc de 10 +5 +0 = 15. S’il porte son bouclier (+2 à la DEF), sa DEF passe à 17."></popover-fiche-cof>
+        </ng-template>
+        <shared-graphique-chronique-oubliees-case 
+          [popoverFiche]="defenseDefinitionTemplate" i18n-popoverTitle popoverTitle="Défense"
+          [body]="'DEF'" [footer]="'DÉFENSE'" [classe]="'negative-marron'">
+        </shared-graphique-chronique-oubliees-case>
     </div>
     <div class="col-md-auto">
       <shared-graphique-chronique-oubliees-case [body]="'10&nbsp;+'" [classe]="'basique'"></shared-graphique-chronique-oubliees-case>

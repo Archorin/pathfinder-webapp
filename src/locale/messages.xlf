@@ -2,6 +2,195 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="b396ef171877375b2d6850fbafb0086d3e6fa877" datatype="html">
+        <source>La Force (FOR) mesure la puissance physique et musculaire.
+                Gagner un bras de fer, soulever, tordre, lancer un objet lourd, immobiliser un adversaire. Attaquer au contact.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/feature/personnage/chroniques-oubliees/fantasy/component/fiche/caracteristique/caracteristique.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b54d82196b1d076fa4e71bcd7c0c1555958a2411" datatype="html">
+        <source>Force</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/feature/personnage/chroniques-oubliees/fantasy/component/fiche/caracteristique/caracteristique.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="34b43256caba461c78e23fdf76b56da63fc92da7" datatype="html">
+        <source>La Dextérité (DEX) évalue l’agilité, les réflexes et l’adresse.
+                Faire des acrobaties, tenir en équilibre, grimper, sauter, sprinter, se déplacer en silence, crocheter, chaparder, esquiver une attaque. Attaquer à distance.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/feature/personnage/chroniques-oubliees/fantasy/component/fiche/caracteristique/caracteristique.component.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="df10f2520d886253052eff719f9cf07f3c281e6c" datatype="html">
+        <source>Dextérité</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/feature/personnage/chroniques-oubliees/fantasy/component/fiche/caracteristique/caracteristique.component.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="02665c84252db18e514616a48fba589b92ba55b8" datatype="html">
+        <source>La Constitution (CON) représente la santé et l’endurance.
+                Résister aux éléments, à la fatigue, aux poisons, aux privations, courir longtemps. Encaisser des blessures.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/feature/personnage/chroniques-oubliees/fantasy/component/fiche/caracteristique/caracteristique.component.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8fec10287f18328b24cd744d60b3b811e33ddc96" datatype="html">
+        <source>Constitution</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/feature/personnage/chroniques-oubliees/fantasy/component/fiche/caracteristique/caracteristique.component.ts</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1d912f53d9ef0d15fe9f513121bdfce0d68e7dde" datatype="html">
+        <source>L’Intelligence (INT) représente les capacités d’apprentissage et de raisonnement.
+                Raisonner, comprendre, connaître, apprendre, se souvenir, chercher, trouver une information (livre). Attaquer par magie.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/feature/personnage/chroniques-oubliees/fantasy/component/fiche/caracteristique/caracteristique.component.ts</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8031155db31bbda57ee1eed1ff5b0b80ca3db362" datatype="html">
+        <source>Intelligence</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/feature/personnage/chroniques-oubliees/fantasy/component/fiche/caracteristique/caracteristique.component.ts</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2b4810e7e3af53b278234182a2c42bd0fd26f64b" datatype="html">
+        <source>L’Intelligence (INT) représente les capacités d’apprentissage et de raisonnement.
+                        Raisonner, comprendre, connaître, apprendre, se souvenir, chercher, trouver une information (livre). Attaquer par magie.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/feature/personnage/chroniques-oubliees/fantasy/component/fiche/caracteristique/caracteristique.component.ts</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2b21ee21ad8588164c78e5fde85b31c15e80156d" datatype="html">
+        <source>Sagesse</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/feature/personnage/chroniques-oubliees/fantasy/component/fiche/caracteristique/caracteristique.component.ts</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a207914f33e3520cb0281d6e644b58290387140c" datatype="html">
+        <source>Le Charisme (CHA) traduit la force de persuasion, la présence et la capacité à commander.
+                    Bluffer, mentir, négocier, séduire, intimider, convaincre.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/feature/personnage/chroniques-oubliees/fantasy/component/fiche/caracteristique/caracteristique.component.ts</context>
+          <context context-type="linenumber">119</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4eba1e3a46648904c73400d8fc77037bb1fdd24e" datatype="html">
+        <source>Charisme</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/feature/personnage/chroniques-oubliees/fantasy/component/fiche/caracteristique/caracteristique.component.ts</context>
+          <context context-type="linenumber">122</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6a65fb3a6534a72272fc51be089ae439a175472f" datatype="html">
+        <source>L’Initiative (Init.) d’un personnage représente sa vitesse de réaction et sert principalement à déterminer l’ordre d’action des différents protagonistes lors d’un combat. Au départ, le score d’Initiative est égal à la valeur de DEX du personnage, mais il peut ensuite évoluer différemment, ce score est donc noté à part.
+
+                Exemple : l’initiative de Krush est normalement égale à 11 (son score de DEX). Toutefois, sa capacité Vivacité (rang 1 de la Voie du combat) augmente ce score de +3. Son Init. est donc égale à 14.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/feature/personnage/chroniques-oubliees/fantasy/component/fiche/combat/combat.component.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2e18ab301fc2fc5ffaeb4cd1b0413bb2539aee21" datatype="html">
+        <source>Initiative</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/feature/personnage/chroniques-oubliees/fantasy/component/fiche/combat/combat.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3d7cdd7a505da3a8c84b461e5199823de1d646cc" datatype="html">
+        <source>Le score d’attaque d’un personnage est égal au Niveau du personnage auquel s’ajoute le Mod. de FOR.
+                Exemple : Krush est un personnage de niveau 1. Son score d’Attaque au contact est donc de +4 (FOR +3).</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/feature/personnage/chroniques-oubliees/fantasy/component/fiche/combat/combat.component.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0b3694d224ae63bc23be814d46d58e56ce56f48d" datatype="html">
+        <source>Attaque au contact</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/feature/personnage/chroniques-oubliees/fantasy/component/fiche/combat/combat.component.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0f9d458e7b47bda6c1462040fd0af7c024dab9c7" datatype="html">
+        <source>Le score d’attaque d’un personnage est égal au Niveau du personnage auquel s’ajoute le Mod. de DEX.
+                        Exemple : Krush est un personnage de niveau 1. Son score d’Attaque à distance de +1 (DEX +0).</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/feature/personnage/chroniques-oubliees/fantasy/component/fiche/combat/combat.component.ts</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dae49f72d75b7e74a328c28e25a45d12ad249df1" datatype="html">
+        <source>Attaque à distance</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/feature/personnage/chroniques-oubliees/fantasy/component/fiche/combat/combat.component.ts</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="43980272ad781cdec7b2caea873284b5cd21c52a" datatype="html">
+        <source>Le score d’attaque d’un personnage est égal au Niveau du personnage auquel s’ajoute le Mod. d’INT pour les attaques magiques par défaut. Toutefois de nombreux Profils d’utilisateur de magie emploient un autre Mod. de Carac. pour refléter une magie différente qui ne fait pas appel à l’intellect du personnage.
+                    N’utilisant pas la magie, il n’a normalement pas usage du score d’Attaque magique. Toutefois ce score pourra parfois être utilisé pour résister à un sort, il est donc égal à +0 (INT -1 et niveau +1).</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/feature/personnage/chroniques-oubliees/fantasy/component/fiche/combat/combat.component.ts</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="152136048364b458379769e75b61cdb2f655a36d" datatype="html">
+        <source>Attaque magique</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/feature/personnage/chroniques-oubliees/fantasy/component/fiche/combat/combat.component.ts</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6444cd7b8b9084415d51cf3d597636561d543e6c" datatype="html">
+        <source>Tous les personnages possèdent des Points de vie (PV). Ce nombre représente leur capacité à encaisser les dommages et les blessures.
+
+          Au niveau 1, le nombre de PV de votre personnage est égal au résultat maximum du Dé de vie de son Profil, auquel on ajoute son Mod. de CON. Parfois, une Capacité peut venir modifier ce score.
+          
+          Exemple : Krush le Guerrier Demi-orque possède une CON de 16/+3 et son Profil de Guerrier indique que le Dé de vie utilisé est le d10. Il obtient donc au premier niveau 13 PV (10 pour le d10 plus 3 pour le Mod. de CON). Toutefois, Krush possède la Capacité de rang 1 de la Voie de la résistance, nommée Robustesse, qui lui permet d’ajouter +3 PV. Son score final de PV est donc de 16 !</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/feature/personnage/chroniques-oubliees/fantasy/component/fiche/vitalite/vitalite.component.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f708527cd805eef64f7cb923e64ed1df62e695f6" datatype="html">
+        <source>Dés de vie et Points de vie</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/feature/personnage/chroniques-oubliees/fantasy/component/fiche/vitalite/vitalite.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/feature/personnage/chroniques-oubliees/fantasy/component/fiche/vitalite/vitalite.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f7225cc17cc8fdefc58b7e5e6c1eb5f94a878704" datatype="html">
+        <source>La Défense (DEF) d’un personnage représente sa capacité à esquiver et/ou à dévier les coups qui lui sont portés. La DEF de votre personnage est égale à 10 + Mod. de DEX + éventuels Modificateurs de capacités et d’armure (voir Équipement).
+
+            Exemple : Krush porte une cotte de mailles (+5 à la DEF) et son modificateur de DEX est de +0. Sa DEF est donc de 10 +5 +0 = 15. S’il porte son bouclier (+2 à la DEF), sa DEF passe à 17.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/feature/personnage/chroniques-oubliees/fantasy/component/fiche/defense/defense.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="712cabaccea7c87d303c943fa1814f0e4d2c7d84" datatype="html">
+        <source>Défense</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/feature/personnage/chroniques-oubliees/fantasy/component/fiche/defense/defense.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="4a08a0cca36841ee008a9abaa03d0b2b7dfcfe85" datatype="html">
         <source>Liste des personnages</source>
         <context-group purpose="location">

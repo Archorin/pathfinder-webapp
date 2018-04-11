@@ -6,6 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./vitalite.component.scss']
 })
 export class VitaliteComponent implements OnInit {
+  // Démo
+  personnage = {
+    'niveau': 4,
+    'DV': 'd8',
+    'PVmax': 42,
+    'PVactuel': 28
+  };
 
   constructor() { }
 

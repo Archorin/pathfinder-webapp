@@ -1,0 +1,16 @@
+.popover {
+    color: #f8f9fa !important;
+    background-color: #6c757d !important;
+    max-width: 30% !important;
+
+    &>.arrow:after {
+        border-top-color: #6c757d;
+    }
+
+    .popover-header {
+        background-color: #6a3d24 !important;
+    }
+    .popover-body {
+        color: #f8f9fa !important;
+    }
+}
