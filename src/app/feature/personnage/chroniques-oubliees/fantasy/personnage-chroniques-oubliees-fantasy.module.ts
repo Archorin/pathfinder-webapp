@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { PersonnageChroniquesOublieesFantasyRoutingModule } from './personnage-chroniques-oubliees-fantasy-routing.module';
@@ -41,6 +41,8 @@ import { DescriptionComponent } from './component/fiche/description/description.
     EquipementComponent,
     ReglesOptionnellesComponent,
     DescriptionComponent
-  ]
+  ],
+  // Permet d'utiliser une syntaxe <ma-variable> dans les transclusions
+  schemas: [NO_ERRORS_SCHEMA]
 })
 export class PersonnageChroniquesOublieesFantasyModule { }

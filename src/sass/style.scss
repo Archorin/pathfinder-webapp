@@ -1,9 +1,17 @@
-@import './variables';
-@media print {
-    body {
-        -webkit-print-color-adjust: exact;
-    }
-}
+////
+/// Fiche de personnage Chroniques Oubliées Fantasy
+/// @group sass/main/mixins
+/// @author Anthony ROCHET
+////
+
+/* abstract */
+@import 'abstract/_mixins';
+
+// @media print {
+//     body {
+//         -webkit-print-color-adjust: exact;
+//     }
+// }
 
 /* You can add global styles to this file, and also import other style files */
 

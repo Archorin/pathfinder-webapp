@@ -1,9 +1,14 @@
+@import "~sass/style";
+
 .popover {
     color: #f8f9fa !important;
     background-color: #6c757d !important;
     max-width: 30% !important;
 
-    &>.arrow:after {
+    .arrow {
+        display: none;
+    }
+    .arrow:after {
         border-top-color: #6c757d;
     }
 
@@ -12,5 +17,14 @@
     }
     .popover-body {
         color: #f8f9fa !important;
+    }
+    .encart {
+        @include box-shadow(5px, 5px, 3px, #444444);
+        @include border-radius(5px);
+        color: #f9fafb !important;
+        background-color: #8e979f !important;
+        padding: 3px;
+        width: 95%;
+        margin: 6px 0px 3px 10px;
     }
 }

@@ -7,9 +7,20 @@
   <div class="row no-gutters">
     <div class="col-md-auto">
         <ng-template #defenseDefinitionTemplate>
-            <popover-fiche-cof i18n-message message="La Défense (DEF) d’un personnage représente sa capacité à esquiver et/ou à dévier les coups qui lui sont portés. La DEF de votre personnage est égale à 10 + Mod. de DEX + éventuels Modificateurs de capacités et d’armure (voir Équipement).
-
-            Exemple : Krush porte une cotte de mailles (+5 à la DEF) et son modificateur de DEX est de +0. Sa DEF est donc de 10 +5 +0 = 15. S’il porte son bouclier (+2 à la DEF), sa DEF passe à 17."></popover-fiche-cof>
+            <popover-fiche-cof i18n>
+                <div>La Défense (
+                    <span class="font-weight-bold">DEF</span> ) d’un personnage représente sa capacité à esquiver et/ou à dévier les coups qui lui sont portés.
+                </div>
+                <div class="mt-2">La <span class="font-weight-bold">DEF</span> de votre personnage est égale à 10 + Mod. de <span class="font-weight-bold">DEX</span> + éventuels Modificateurs de capacités et d’armure.
+                    l’ordre d’action des différents protagonistes lors d’un combat.
+                </div>
+                <div class="font-italic encart">
+                    <u class="font-weight-bold">Exemple:</u> Krush porte une cotte de mailles (+5 à la DEF) et son modificateur de DEX est de +0.
+                    <div class="mt-2">
+                      Sa DEF est donc de 10 +5 +0 = 15. S’il porte son bouclier (+2 à la DEF), sa DEF passe à 17.
+                    </div>
+                </div>
+            </popover-fiche-cof>
         </ng-template>
         <shared-graphique-chronique-oubliees-case 
           [popoverFiche]="defenseDefinitionTemplate" i18n-popoverTitle popoverTitle="Défense"

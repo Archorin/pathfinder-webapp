@@ -5,11 +5,21 @@
   </div>
   <div class="row no-gutters">
     <ng-template #dvEtPvDefinitionTemplate>
-      <popover-fiche-cof i18n-message message="Tous les personnages possèdent des Points de vie (PV). Ce nombre représente leur capacité à encaisser les dommages et les blessures.
-
-          Au niveau 1, le nombre de PV de votre personnage est égal au résultat maximum du Dé de vie de son Profil, auquel on ajoute son Mod. de CON. Parfois, une Capacité peut venir modifier ce score.
-          
-          Exemple : Krush le Guerrier Demi-orque possède une CON de 16/+3 et son Profil de Guerrier indique que le Dé de vie utilisé est le d10. Il obtient donc au premier niveau 13 PV (10 pour le d10 plus 3 pour le Mod. de CON). Toutefois, Krush possède la Capacité de rang 1 de la Voie de la résistance, nommée Robustesse, qui lui permet d’ajouter +3 PV. Son score final de PV est donc de 16 !"></popover-fiche-cof>
+        <popover-fiche-cof i18n>
+            <div>Tous les personnages possèdent des Points de vie (
+                <span class="font-weight-bold">PV</span> ) traduit la force de persuasion, la présence et la capacité à commander.</div>
+            <div class="mt-2">
+                Au niveau 1, le nombre de <span class="font-weight-bold">PV</span> de votre personnage est égal au résultat maximum du Dé de vie de son Profil, auquel on ajoute son Mod. de <span class="font-weight-bold">CON</span>.
+            </div>
+            <div class="mt-2">Parfois, une Capacité peut venir modifier ce score.</div>
+            <div class="font-italic encart">
+                <u class="font-weight-bold">Exemple:</u>
+                Krush le Guerrier Demi-orque possède une CON de 16/+3 et son Profil de Guerrier indique que le Dé de vie utilisé est le d10. Il obtient donc au premier niveau 13 PV (10 pour le d10 plus 3 pour le Mod. de CON). <br />
+                <div class="mt-2">
+                  Toutefois, Krush possède la Capacité de rang 1 de la Voie de la résistance, nommée Robustesse, qui lui permet d’ajouter +3 PV. Son score final de PV est donc de 16 !
+                </div>
+            </div>
+        </popover-fiche-cof>
     </ng-template>
     <div class="col-5">
       <shared-graphique-chronique-oubliees-case [popoverFiche]="dvEtPvDefinitionTemplate" i18n-popoverTitle popoverTitle="Dés de vie et Points de vie"

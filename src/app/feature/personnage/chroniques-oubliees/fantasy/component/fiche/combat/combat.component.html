@@ -9,12 +9,20 @@
     <div class="row no-gutters">
         <div class="col-5">
             <ng-template #initiativeDefinitionTemplate>
-                <popover-fiche-cof i18n-message message="L’Initiative (Init.) d’un personnage représente sa vitesse de réaction et sert principalement à déterminer l’ordre d’action des différents protagonistes lors d’un combat. Au départ, le score d’Initiative est égal à la valeur de DEX du personnage, mais il peut ensuite évoluer différemment, ce score est donc noté à part.
-
-                Exemple : l’initiative de Krush est normalement égale à 11 (son score de DEX). Toutefois, sa capacité Vivacité (rang 1 de la Voie du combat) augmente ce score de +3. Son Init. est donc égale à 14."></popover-fiche-cof>
+                <popover-fiche-cof i18n>
+                    <div>L’Initiative (
+                        <span class="font-weight-bold">Init.</span> ) d’un personnage représente sa vitesse de réaction et sert principalement à déterminer
+                        l’ordre d’action des différents protagonistes lors d’un combat.</div>
+                    <div class="mt-2">Au départ, le score d’Initiative est égal à la valeur de
+                        <span class="font-weight-bold">DEX</span> du personnage, mais il peut ensuite évoluer différemment, ce score est donc noté à part.</div>
+                    <div class="font-italic encart">
+                        <u class="font-weight-bold">Exemple:</u> L’initiative de Krush est normalement égale à 11 (son score de DEX).
+                        <br />Toutefois, sa capacité Vivacité (rang 1 de la Voie du combat) augmente ce score de +3. Son Init.
+                        est donc égale à 14.</div>
+                </popover-fiche-cof>
             </ng-template>
-            <shared-graphique-chronique-oubliees-case [popoverFiche]="initiativeDefinitionTemplate" i18n-popoverTitle popoverTitle="Initiative"
-                [body]="'INITIATIVE'" [classe]="'negative-marron basique'">
+            <shared-graphique-chronique-oubliees-case placement="bottom" [popoverFiche]="initiativeDefinitionTemplate" i18n-popoverTitle
+                popoverTitle="Initiative" [body]="'INITIATIVE'" [classe]="'negative-marron basique'">
             </shared-graphique-chronique-oubliees-case>
         </div>
         <div class="col text-dark">
@@ -33,8 +41,15 @@
     <div class="row no-gutters">
         <div class="col-5">
             <ng-template #attaqueAuContactDefinitionTemplate>
-                <popover-fiche-cof i18n-message message="Le score d’attaque d’un personnage est égal au Niveau du personnage auquel s’ajoute le Mod. de FOR.
-                Exemple : Krush est un personnage de niveau 1. Son score d’Attaque au contact est donc de +4 (FOR +3)."></popover-fiche-cof>
+                <popover-fiche-cof i18n>
+                    <div>Le score d’attaque d’un personnage est égal au Niveau du personnage auquel s’ajoute le Mod. de
+                        <span
+                            class="font-weight-bold">FOR</span>.</div>
+                    <div class="font-italic encart">
+                        <u class="font-weight-bold">Exemple:</u> Krush est un personnage de niveau 1. Son score d’Attaque au contact est donc de +4 (FOR
+                        +3).
+                    </div>
+                </popover-fiche-cof>
             </ng-template>
             <shared-graphique-chronique-oubliees-case [popoverFiche]="attaqueAuContactDefinitionTemplate" i18n-popoverTitle popoverTitle="Attaque au contact"
                 [header]="'ATTAQUE'" [body]="'AU CONTACT'" [classe]="'negative-marron'"></shared-graphique-chronique-oubliees-case>
@@ -58,8 +73,14 @@
     <div class="row no-gutters">
         <div class="col-5">
             <ng-template #attaqueADistanceDefinitionTemplate>
-                <popover-fiche-cof i18n-message message="Le score d’attaque d’un personnage est égal au Niveau du personnage auquel s’ajoute le Mod. de DEX.
-                        Exemple : Krush est un personnage de niveau 1. Son score d’Attaque à distance de +1 (DEX +0)."></popover-fiche-cof>
+                <popover-fiche-cof i18n>
+                    <div>Le score d’attaque d’un personnage est égal au Niveau du personnage auquel s’ajoute le Mod. de
+                        <span
+                            class="font-weight-bold">DEX</span>.</div>
+                    <div class="font-italic encart">
+                        <u class="font-weight-bold">Exemple:</u> Krush est un personnage de niveau 1. Son score d’Attaque à distance de +1 ( DEX +0 ).
+                    </div>
+                </popover-fiche-cof>
             </ng-template>
             <shared-graphique-chronique-oubliees-case [popoverFiche]="attaqueADistanceDefinitionTemplate" i18n-popoverTitle popoverTitle="Attaque à distance"
                 [header]="'ATTAQUE'" [body]="'À DISTANCE'" [classe]="'negative-marron'"></shared-graphique-chronique-oubliees-case>
@@ -83,11 +104,16 @@
     <div class="row no-gutters">
         <div class="col-5">
             <ng-template #attaqueMagiqueDefinitionTemplate>
-                <popover-fiche-cof i18n-message message="Le score d’attaque d’un personnage est égal au Niveau du personnage auquel s’ajoute le Mod. d’INT pour les attaques magiques par défaut. Toutefois de nombreux Profils d’utilisateur de magie emploient un autre Mod. de Carac. pour refléter une magie différente qui ne fait pas appel à l’intellect du personnage.
-                    N’utilisant pas la magie, il n’a normalement pas usage du score d’Attaque magique. Toutefois ce score pourra parfois être utilisé pour résister à un sort, il est donc égal à +0 (INT -1 et niveau +1)."></popover-fiche-cof>
+                <popover-fiche-cof i18n>
+                    <div>Le score d’attaque d’un personnage est égal au Niveau du personnage auquel s’ajoute le Mod. d’<span class="font-weight-bold">INT</span> pour les attaques magiques par défaut.</div>
+                    <div class="mt-2">Toutefois de nombreux Profils d’utilisateur de magie emploient un autre Mod. de Carac. pour refléter une magie différente qui ne fait pas appel à l’intellect du personnage.</div>
+                    <div class="mt-2">Le Mod. de <span class="font-weight-bold">SAG</span> pour les Druides, les Moines et les Prêtres. Le Mod. de <span class="font-weight-bold">CHA</span> pour les Bardes et les Ensorceleurs.</div>
+                    <div class="font-italic encart">
+                        <u class="font-weight-bold">Exemple:</u> Krush est un personnage de niveau 1. Son score d’Attaque au contact est donc de +4 ( FOR +3 ) et son score d’Attaque à distance de +1 ( DEX +0 ). N’utilisant pas la magie, il n’a normalement pas usage du score d’Attaque magique. Toutefois ce score pourra parfois être utilisé pour résister à un sort, il est donc égal à +0 ( INT -1 et niveau +1 ).
+                    </div>
+                </popover-fiche-cof>
             </ng-template>
-            <shared-graphique-chronique-oubliees-case 
-                [popoverFiche]="attaqueMagiqueDefinitionTemplate" i18n-popoverTitle popoverTitle="Attaque magique"
+            <shared-graphique-chronique-oubliees-case [popoverFiche]="attaqueMagiqueDefinitionTemplate" i18n-popoverTitle popoverTitle="Attaque magique"
                 [header]="'ATTAQUE'" [body]="'MAGIQUE'" [classe]="'negative-marron'"></shared-graphique-chronique-oubliees-case>
         </div>
         <div class="col text-dark">
