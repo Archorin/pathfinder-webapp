@@ -27,6 +27,8 @@ import { ConcatPipe } from './pipe/concat/concat.pipe';
 import { AlterationSignePipe } from './pipe/alteration-signe/alteration-signe.pipe';
 import { PopoverFicheDirective } from './graphique/popover-fiche/popover-fiche.directive';
 import { PopoverFicheCofComponent } from './graphique/popover-fiche/popover-fiche-cof/popover-fiche-cof.component';
+import { MenuOptionComponent } from './graphique/menu-option/menu-option.component';
+import { MenuOptionDirective } from './graphique/menu-option/menu-option.directive';
 
 @NgModule({
   imports: [
@@ -55,6 +57,8 @@ import { PopoverFicheCofComponent } from './graphique/popover-fiche/popover-fich
     AlterationSignePipe,
     PopoverFicheDirective,
     PopoverFicheCofComponent,
+    MenuOptionComponent,
+    MenuOptionDirective
   ],
   exports: [
     GestionnaireDeTachesComponent,
@@ -72,6 +76,8 @@ import { PopoverFicheCofComponent } from './graphique/popover-fiche/popover-fich
     AlterationSignePipe,
     PopoverFicheDirective,
     PopoverFicheCofComponent,
+    MenuOptionComponent,
+    MenuOptionDirective
   ]
 })
 export class SharedModule { }

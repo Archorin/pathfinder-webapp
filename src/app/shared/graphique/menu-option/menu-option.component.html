@@ -1,0 +1,24 @@
+<div class="menu-option" dropdown>
+  <picto [libelle]="'menu-configuration'" [options]="['2x', 'spin']"  
+    id="button-menu" dropdownToggle 
+    aria-controls="dropdown-menu">
+  </picto>
+
+  <ul *dropdownMenu class="dropdown-menu" role="menu" 
+    style="top: 0 !important; left: 0 !important; position: absolute !important;" 
+    aria-labelledby="button-menu">
+    <li role="menuitem">
+      <a class="dropdown-item" href="#">Action</a>
+    </li>
+    <li role="menuitem">
+      <a class="dropdown-item" href="#">Another action</a>
+    </li>
+    <li role="menuitem">
+      <a class="dropdown-item" href="#">Something else here</a>
+    </li>
+    <li class="divider dropdown-divider"></li>
+    <li role="menuitem">
+      <a class="dropdown-item" href="#">Separated link</a>
+    </li>
+  </ul>
+</div>
